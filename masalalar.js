@@ -463,3 +463,21 @@
 // }
 
 // console.log(bbc([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// ----------------------------------------------------14 masala
+
+// katta kichikni topish
+
+
+// function bbc(arr) {
+// let sum = arr[0]
+
+// for (let i = 0; i < arr.length; i++) {
+//  if (sum >= arr[i]) {
+//     sum = arr[i]
+//  }
+// }
+// return sum
+// }
+
+// console.log(bbc([11, 3, 2, 12]));

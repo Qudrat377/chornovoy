@@ -712,3 +712,140 @@
 // }
 
 // console.log(bbc([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// ------------------------------------------------------------5 dars
+
+// 1 masala
+
+// sonni yaxlitlash va musbatlash
+
+// function bbc(arr) {
+//   let sum = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let dallol = arr[i];
+//     if (dallol < 0) {
+//       sum[sum.length] = dallol = -dallol;
+//     } else {
+//       sum[sum.length] = dallol;
+//     }
+// }
+// let rouded = sum.map(num => Math.round(num))
+
+//   return rouded;
+// }
+
+// console.log(bbc([3.02, -3.65, 5, -9]));
+
+// 2 masala
+
+// sonni kubi
+
+// function bbc(num) {
+//   return num * num * num;
+// }
+
+// console.log(bbc(3));
+
+// 3 masala
+
+// juft va toqlar yig'indisi alohida
+
+// function bbc(num) {
+//   let sum = 0;
+//   let toq = 0;
+//   const result = [];
+//   for (let i = 0; i <= num; i++) {
+//     if (i % 2 === 0) {
+//       sum += i;
+//     } else {
+//       toq += i;
+//     }
+//   }
+//   result[result.length] = `juft sonlar: ${sum} toq sonlar ${toq}`;
+
+//   return result;
+// }
+
+// console.log(bbc(5));
+
+// 4 masala
+
+// oldingi harfni orqaga o'tkazish
+
+// function bbc(str) {
+//   let sum = "";
+//   let oxiriga = "";
+//   let sanash = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     let dallod = str[i];
+//     if (dallod !== " " && sanash === 0) {
+//       oxiriga += dallod;
+//       sanash++;
+//     } else if (dallod !== " ") {
+//       sum += dallod;
+//     }
+//   }
+//   return (sum += oxiriga);
+// }
+
+// console.log(bbc("     tJavascrip     "));
+
+// 5 masala
+
+// ikkisi teng bo'lsa qo'shib ikkiga ko'paytirish
+
+// function bbc(son, num) {
+//   let sum = 0;
+//   if (num === son) {
+//     sum = (num += son) * 2;
+//   } else {
+//     sum = son += num;
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(2, 3));
+
+// 6 masala
+
+// arrdagi sonlarni yig'indisi
+
+// function bbc(arr) {
+// let sum = 0
+// for (let i = 0; i < arr.length; i++) {
+//    sum += arr[i]
+// }
+// return sum
+// }
+
+// console.log(bbc([2, 5, 7, 10]));
+
+// 7 masala
+
+// yaxlitlab beradi
+
+// function bbc(num) {
+// let sum = Math.round(num)
+
+// return sum
+// }
+
+// console.log(bbc(34.000));
+
+// 8 masala
+
+// arrdagi sonlarni eng kattasi
+
+// function bbc(arr) {
+// let num = 0
+// for (let i = 0; i < arr.length; i++) {
+//  let   sum = arr[0]
+//  if (sum <= arr[i]) {
+//     num = arr[i]
+//  }
+// }
+// return num
+// }
+
+// console.log(bbc([11, 5, 7, 12]));
