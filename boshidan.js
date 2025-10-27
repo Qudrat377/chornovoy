@@ -849,3 +849,44 @@
 // }
 
 // console.log(bbc([11, 5, 7, 12]));
+
+// 9 masala
+
+// arrdagi sonlarni eng kichigini topish
+
+// function bbc(arr) {
+// let sum = arr[0]
+
+// for (let i = 0; i < arr.length; i++) {
+//  if (sum >= arr[i]) {
+//     sum = arr[i]
+//  }
+// }
+// return sum
+// }
+
+// console.log(bbc([11, 3, 2, 12]));
+
+// 10 masala
+
+// ikki arraydagi sonlarni eng kattasi topish
+
+// function bbc(arr, array) {
+//   let num = [];
+//   let sum = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     num.push(arr[i]);
+//   }
+//   for (let j = 0; j < array.length; j++) {
+//     num.push(array[j]);
+//   }
+//   for (let k = 0; k <= num.length; k++) {
+//     if (sum <= num[k]) {
+//       sum = num[k];
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc([11, 5, 1, 12], [111, 4, 6, 2, 99, 44, 11]));
