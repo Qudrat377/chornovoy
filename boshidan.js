@@ -1,0 +1,714 @@
+// function bbc() {
+
+// }
+
+// console.log(bbc())
+
+// --------------------------------------------------1 dars
+
+// 1 masala
+
+// function bbc(soat) {
+
+//     return soat * 60
+// }
+// console.log(bbc(1));
+
+// 2 masala
+
+// function bbc(ism, yosh) {
+//     return [yosh, ism.toLocaleUpperCase()]
+// }
+
+// console.log(bbc("qudrat", 23))
+
+// 3 masala
+
+// function bbc(ism, yosh) {
+
+// let res = ism
+// let rew = yosh
+// let result = res===rew
+
+// return typeof result
+// }
+
+// console.log(bbc("qudrat", 23))
+
+// 4 masala
+
+// function bbc(son, num) {
+
+// let result = son += num
+
+// return result
+// }
+
+// console.log(bbc(2, 5))
+
+// 5 masala
+
+// function bbc(son, num, num1) {
+
+// let result = son += num += num1
+
+// return result / 3
+// }
+
+// console.log(bbc(4, 5, 6))
+
+// 6 masala
+
+// function bbc(son, num) {
+
+// let result = son *= num
+
+// return result
+// }
+
+// console.log(bbc(2, 5))
+
+// 7 masala
+
+// function bbc(son, num) {
+
+// let result = son /= num
+
+// return result
+// }
+
+// console.log(bbc(15, 5))
+
+// 8 masala
+
+// function bbc(son, num) {
+
+// let result = son *= son
+// let res = num *= num
+
+// return result += res
+// }
+
+// console.log(bbc(4, 5))
+
+// 9 masala
+
+// function bbc(son, num) {
+
+// let avval = son *= son *= son
+// let res = num *= num *= num
+// let result = 0
+// if (avval > res) {
+//     result = avval -= res
+// }else{
+//     result = res -= avval
+// }
+
+// return result
+// }
+
+// console.log(bbc(3, 2))
+
+// 10 masala
+
+// function bbc(son, num) {
+
+// let avval = son *= son *= son
+// let res = num *= num *= num
+// let result = 0
+// if (avval > res) {
+//     result = avval * res
+// }else{
+//     result = res * avval
+// }
+
+// return result
+// }
+
+// console.log(bbc(3, 2))
+
+//------------------------------------------------- 2 dars
+
+// 1 masala
+
+// function bbc (num) {
+//     let sum = null
+//     if (num < 0) {
+//         sum = "manfiy"
+//     }else {
+//         sum = "musbat"
+//     }
+// return sum
+// }
+
+// console.log(bbc(9));
+
+// 2 masala
+
+// function bbc(bir, ikki) {
+//   let sum = 0;
+
+//   if (bir > ikki) {
+//     sum = bir;
+//   } else {
+//     sum = ikki;
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(5,2));
+
+// 3 masala
+
+// function bbc(bir) {
+//   let sum = ""
+
+//   if (bir === 0) {
+//     sum = "kiritilgan son 0"
+//   } else if(bir < 0){
+//     sum = "kiritilgan son 0 dan kichik"
+//   } else {
+//     sum = "kiritilgan son 0 dan katta"
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(0));
+
+// 4 masala
+
+// function bbc(bir, ikki) {
+//   let sum = ""
+
+//   if (bir === ikki) {
+//     sum = "kiritilgan sonlar teng"
+//   } else {
+//     sum = "kiritilgan sonlar teng emas"
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(5,5));
+
+// 5 masala
+
+// function bbc(bir) {
+//   let sum = ""
+// if (bir % 3 === 0 && bir % 5 === 0) {
+//     sum = "FIZZBuzz"
+//   }
+//  else if (bir % 3 === 0) {
+//     sum = "Fizz"
+//   } else if(bir % 5 === 0) {
+//     sum = "Buzz"
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(15));
+
+// 6 masala
+
+// function bbc(bir) {
+//   let sum = ""
+
+//   if (bir <= 18) {
+//     sum = "hali yishsiz"
+//   } else {
+//     sum = "haydovchilik guvahnomasini olasiz"
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(22));
+
+// 7 masala
+
+// function bbc(bir) {
+//   let sum = "";
+//   if (bir === 1) {
+//     sum = "dushanbaz";
+//   } else if (bir === 2) {
+//     sum = "seshanba";
+//   } else if (bir === 3) {
+//     sum = "chorshanba";
+//   } else if (bir === 4) {
+//     sum = "payshanba";
+//   } else if (bir === 5) {
+//     sum = "juma";
+//   } else if (bir === 6) {
+//     sum = "shanba";
+//   } else if (bir === 7) {
+//     sum = "yakshanba";
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(5));
+
+// 8 masala
+
+// function bbc(bir) {
+//   let sum = bir % 10;
+
+//   if (sum % 2 === 0) {
+//     return "juft son";
+//   } else {
+//     return "toq son";
+//   }
+// }
+
+// console.log(bbc(225));
+
+// 9 masala
+
+// function bbc(bir) {
+//   if (bir > 0) {
+//     return (bir += 1);
+//   } else {
+//     return (bir -= 2);
+//   }
+// }
+
+// console.log(bbc(-225));
+
+// 10 masala
+
+// function bbc(bir) {
+//   let sum = 0
+// for (let i = 0; i < bir.length; i++) {
+
+//   if (bir[i] > 0) {
+//    sum ++
+//   }
+// }
+//     return sum
+// }
+
+// console.log(bbc([225, -32, 45, -56, 33]));
+
+//--------------------------------------------------- 3 dars
+
+// 1 masala
+
+// function bbc(bir) {
+//   let sum = []
+// for (let i = bir; i >= 0; i--) {
+//     if (i % 2 != 0) {
+//     sum[sum.length] = i
+//     }
+// }
+//     return sum
+// }
+
+// console.log(bbc(13));
+
+// 2 masala
+
+// function bbc(bir) {
+//   let sum = 0;
+//   for (let i = 0; i <= bir; i++) {
+//     if (i % 2 === 0) {
+//       sum = sum + i;
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc(6));
+
+// 3 masala
+
+// function bbc(bir) {
+//   let sum = []
+// for (let i = bir; i >= 0; i--) {
+//     sum[sum.length] = i
+// }
+//     return sum
+// }
+
+// console.log(bbc(13));
+
+// 4 masala
+
+// function bbc(bir) {
+//   let sum = 1
+//   for (let i = 0; i <= bir; i++) {
+//     if (i % 2 !== 0) {
+//       sum = sum * i;
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc(7));
+
+// 5 masala
+
+// function bbc(bir) {
+//   let sum = []
+//   for (let i = 0; i <= bir; i++) {
+//     if (i % 2 === 0) {
+//       sum[sum.length] = i;
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc(50));
+
+// 6 masala
+
+// function bbc(str) {
+
+//   return str.length
+// }
+
+// console.log(bbc("Hello World"));
+
+// 6 masala boshqa variant
+
+// function bbc(str) {
+//   let sum = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== " ") {
+//       sum ++
+//       console.log(str[i], i);
+
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc("Hello World"));
+
+// 7 masala
+
+// function bbc(str) {
+//   let sum = ""
+//   for (let i = str.length-1; i >= 0; i--) {
+//     sum += str[i]
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc("Hello World"));
+
+// 8 masala
+
+// function bbc(num) {
+//   let sum = []
+//   for (let i = 0; i <= num; i++) {
+//     if (i % 3 !== 0) {
+//       sum[sum.length] = i
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc(20));
+
+// 9 masala
+
+// function bbc(num) {
+//   let sum = num.toString()
+//   return sum.length
+// }
+
+// console.log(bbc(12345678777777777));
+
+// 10 masala
+
+// function bbc(str) {
+//   let sum = {}
+//   for (let i = 0; i < str.length; i++) {
+// sum[i + 1] = str[i]
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc("abcdefghijklmnopqrstuvwzxy"));
+
+// 11 masala
+
+// function bbc(num, son) {
+//   let sum = num / son;
+//   if (sum > 0) {
+//     return true;
+//   }
+
+//   return false;
+// }
+
+// console.log(bbc(-6, 3));
+
+// 12 masala
+
+// function bbc(num) {
+//   if (num > 100) {
+//     return "100 dan katta";
+//   } else if (num === 100) {
+//     return "100 teng";
+//   } else {
+//     return "100 dan kichik";
+//   }
+// }
+
+// console.log(bbc(100));
+
+// 13 masala
+
+// function bbc(guvohnoma, fokus) {
+//   if (guvohnoma === fokus) {
+//     return "ishgaqabul qilindingiz";
+//   }  else {
+//     return "kira olmadingiz";
+//   }
+// }
+
+// console.log(bbc(true, true));
+
+// 14 masala
+
+// function bbc(rang, odamBor,) {
+//   if (rang === "yashil" && odamBor === false) {
+//     return "yuring";
+//   } else if (rang === "yashil" && odamBor === true) {
+//     return "odamni o'tkazib keyin yuring";
+//   }
+//   else if (rang === "qizil"){
+//     return "to'xtang";
+//   }
+// }
+
+// console.log(bbc("qizil", false));
+
+// 15 masala
+
+// function bbc(ball) {
+//   if (ball <= 100 && ball >= 80) {
+//     return "budjet";
+//   } else if (ball >= 70 && ball <= 80) {
+//     return "kantrakt";
+//   } else if (ball >= 60 && ball <= 70) {
+//     return "super kantrakt";
+//   } else {
+//     return "yiqildingiz";
+//   }
+// }
+
+// console.log(bbc(80));
+
+// -----------------------------------------------------4 dars
+
+// 1 masala
+
+// function bbc(arr) {
+//     let sum = 0
+
+//     for (let i = 0; i < arr.length; i++) {
+//        sum += arr[i]
+//        console.log(sum);
+
+//     }
+
+// return sum / arr.length
+// }
+
+// console.log(bbc([2, 5, 8, 3, 7, 8, 6, 5, 2]));
+
+// 2 masala
+
+// function bbc(arr) {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc([2, 5, 8, 3, 7, 8, 6, 5, 2]));
+
+// 3 masala
+
+// function bbc(str) {
+//   let natija = "";
+//   let katta = true;
+
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+
+//     if (katta && belgi !== " ") {
+//       natija += belgi.toUpperCase();
+//       katta = false;
+//     } else {
+//       natija += belgi;
+//     }
+//     if (belgi === " ") {
+//       katta = true;
+//     }
+//   }
+//   return natija;
+// }
+
+// console.log(bbc("salom hammaga"));
+
+// 4 masala
+
+// function bbc(str) {
+//   let natija = "";
+//   let joy = true;
+//   let sum = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+
+//     if (belgi !== " ") {
+//       natija += belgi;
+//     } else {
+//       sum.push(natija.length);
+
+//       natija = "";
+//     }
+//   }
+//   sum.push(natija.length)
+
+//   return sum;
+// }
+
+// console.log(bbc("salom hammaga nima gaplar qalay"));
+
+// 5 masala
+
+// function bbc(str) {
+//   let sum = [];
+//   let son = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+
+//     if (belgi >= 0 && belgi <= 9) {
+//       son += belgi;
+//     } else {
+//         if (son !== "") {
+//             sum.push(son)
+//             son = ""
+//         }
+//     }
+//   }
+// if (son !== "") sum.push(son)
+
+//   return sum
+// }
+
+// console.log(bbc("sa3lom55 nim0a"));
+
+// 6 masala
+
+// function bbc(arr) {
+//   let sum = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let obj = arr[i];
+//     for (const key in obj) {
+//       if (key === "age") {
+//         obj[key] += 5;
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(
+//   bbc([
+//     { name: "Ali", age: 25 },
+//     { name: "Vali", age: 30 },
+//     { name: "Olim", age: 20 },
+//   ])
+// );
+
+// 7 masala
+
+// function bbc(arr) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let item = arr[i];
+
+//     if (typeof item === "object" && item !== null) {
+//       for (const key in item) {
+//         result[result.length] = item[key];
+//       }
+//     } else {
+//       result[result.length] = item;
+//     }
+//   }
+//   let sum = 0;
+//   for (let j = 0; j < result.length; j++) {
+//     if (result[j] >= 0 || result[j] <= 9) {
+//       sum += result[j];
+//     }
+//   }
+
+//   return sum / arr.length;
+// }
+
+// console.log(
+//   bbc([
+//     { name: "Ali", age: 7 },
+//     { name: "Vali", age: 5 },
+//     { name: "Olim", age: 3 },
+//   ])
+// );
+
+// 8 masala
+
+// function bbc(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+
+//     if (belgi >= "0" && belgi <= "9") {
+//       return "raqam bor";
+//     }
+//   }
+//   return "raqam yo'q";
+// }
+
+// console.log(bbc("salom 5chilar nima gap"));      // raqam yo'q
+// console.log(bbc("salom nima"));  // raqam bor
+
+// 9 masala
+
+// function bbc(arr) {
+
+//     let sum  = []
+// for (let i = 0; i < arr.length; i++) {
+//    if (arr[i] % 2 === 0) {
+//     sum.push(arr[i])
+//    }
+// }
+// return sum
+// }
+
+// console.log(bbc([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// 10 masala
+
+// function bbc(arr) {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       sum.push(arr[i]);
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc([1, 2, 3, 4, 5, 6, 7, 8, 9]));
