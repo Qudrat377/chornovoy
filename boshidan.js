@@ -890,3 +890,36 @@
 // }
 
 // console.log(bbc([11, 5, 1, 12], [111, 4, 6, 2, 99, 44, 11]));
+
+// ---------------------------------------------------------6 dars
+
+// 1 masala
+
+// stringni boshidagi son oxiridagidan katta bo'lsa
+//  stringga ++ ishorasi aks xolda -- qo'ying
+
+// function bbc(str) {
+//   let sum = [];
+//   let num = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let dallol = str[i];
+//     if (dallol >= 0 && dallol <= 9) {
+//       num += dallol;
+//     } else {
+//       sum.push(num);
+//       num = "";
+//     }
+//   }
+//   sum.push(num);
+//   for (let i = 0; i < sum.length; i++) {
+//     if (sum[i] !== "") {
+//       if (+sum[0] > +sum[i]) {
+//         return "++javasckriot++";
+//       }
+//     }
+//   }
+
+//   return "--javasckriot--";
+// }
+
+// console.log(bbc("12javascript12"));

@@ -93,3 +93,34 @@
 // console.log(bbc("salom 5chilar nima gap"));      // raqam yo'q
 // console.log(bbc("salom nima"));  // raqam bor
 
+
+// ---------------------------------------------------------4 masala
+
+// stringni boshidagi son oxiridagidan katta bo'lsa
+//  stringga ++ ishorasi aks xolda -- qo'ying
+
+// function bbc(str) {
+//   let sum = [];
+//   let num = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let dallol = str[i];
+//     if (dallol >= 0 && dallol <= 9) {
+//       num += dallol;
+//     } else {
+//       sum.push(num);
+//       num = "";
+//     }
+//   }
+//   sum.push(num);
+//   for (let i = 0; i < sum.length; i++) {
+//     if (sum[i] !== "") {
+//       if (+sum[0] > +sum[i]) {
+//         return "++javasckriot++";
+//       }
+//     }
+//   }
+
+//   return "--javasckriot--";
+// }
+
+// console.log(bbc("12javascript12"));
