@@ -1078,4 +1078,179 @@
 
 // ----------------------------------------------------7 dars
 
+// 1 masala
 
+// Arrayni birinchi elementini ortga o'tkazish
+
+// function bbc(arr) {
+//   let result = [];
+//   let sum = ""
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== arr[0]) {
+//       result[result.length] = arr[i];
+//     } else {
+//       sum = arr[i];
+//     }
+//   }
+//   result[result.length] = sum;
+//   return result;
+// }
+
+// console.log(bbc([-500, 0, 50]));
+
+// 2 masala
+
+// ikki sonni yig'indisini arrga uchunchi qilib qaytaring
+
+// function bbc(son, num) {
+//   let result = [son, num];
+//   result[result.length] = son += num;
+//   return result;
+// }
+
+// console.log(bbc(1, 2));
+
+// 3 masala
+
+// Arraydagi sonlarga birni qo'shib qaytaring
+
+// function bbc(arr) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     result[result.length] = arr[i] + 1;
+//   }
+
+//   return result;
+// }
+
+// console.log(bbc([0, 1, 2, 3]));
+
+// 4 masala
+
+// stringni qirqib arrayga aylantirish alohida
+
+// function bbc(str, qirqiladigan) {
+//   let sum = [];
+//   for (let i = 0; i <= str.length; i++) {
+//     if (i < qirqiladigan) {
+//       sum[sum.length] = str[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc("Hello", 2));
+
+// 5 masala
+
+// yetti raqami bo'lsa Boom chiqsin
+
+// function bbc(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 7) {
+//       return "Boom";
+//     }
+//   }
+//   return "yetti soni topilmadi";
+// }
+
+// console.log(bbc([1, 2, 7]));
+
+// 6 masala
+
+// sonlarni o'zini chiqarib olish
+
+// function bbc(arr) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let belgi = arr[i];
+//     if (belgi > 0) {
+//      result[result.length] = belgi;
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(bbc([0, 1, false, 22, "", 3]));
+
+// 7 masala
+
+// birxilligini topish
+
+// function bbc(birXillik) {
+//   let sanash = 0;
+//   for (let i = 0; i < birXillik.length; i++) {
+//     if (birXillik[0] === birXillik[i]) {
+//       sanash++;
+//     }
+//   }
+//   console.log(sanash);
+//   console.log(birXillik.length);
+
+//   return sanash === birXillik.length ? true : false;
+// }
+
+// console.log(bbc(["@", "@", "@", "@"]));
+
+// 8 masala
+
+// // Arraydagi elementlarning uzunligini topish
+
+// function bbc(arr) {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     sum[sum.length] = arr[i].length;
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(["cat", "dog", "duck"]));
+
+// 9 masala
+
+// // ichida raqam yo'q so'zlarni arrayga solish
+
+// function bbc(arr) {
+//   let faqatHarf = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let soz = arr[i];
+//     let raqam = false;
+
+//     for (let j = 0; j < soz.length; j++) {
+//       let belgi = soz[j];
+//       if (belgi >= "0" && belgi <= "9") {
+//         raqam = true;
+//         break;
+//       }
+//     }
+//     if (!raqam) {
+//       faqatHarf[faqatHarf.length] = soz;
+//     }
+//   }
+//   return faqatHarf;
+// }
+
+// console.log(bbc(["salom", "a14", "b", "3d3", "kitob", "ab9c"]));
+// // 👉 Natija: ["salom", "b", "kitob"]
+
+// 10 masala
+
+// function bbc(arr) {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         let temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
+//       }
+//     }
+//   }
+//   for (let i = arr.length -1; i >= 0; i--) {
+//    sum[sum.length] = arr[i]
+//   }
+//   return sum;
+// }
+
+// console.log(bbc([12, 33, 11, 5, 2, 7]));
