@@ -481,3 +481,35 @@
 // }
 
 // console.log(bbc([11, 3, 2, 12]));
+
+// -------------------------------------------------------15 masala
+
+// kiritilgan qiymatlarning matematik amallardagi qiymatlari
+
+// function bbc(arr) {
+// let result = [
+//    `add: ${arr[0] + arr[1] + arr[2]}`,
+//    `divide: ${arr[0] / arr[1] / arr[2]}`,
+//    `minus: ${arr[0] - arr[1] - arr[2]}`,
+//    `multy: ${arr[0] * arr[1] * arr[2]}`
+// ]
+// return result
+// }
+
+// console.log(bbc([15, 3, 5]));
+
+// ---------------------------------------------------16 masala
+
+// factorialni topish
+
+// function bbc(factorial) {
+// let sum = 1
+// for (let i = 1; i <= factorial; i++) {
+//   sum *= i
+// }
+// return sum
+// }
+
+// console.log(bbc(6));
+
+
