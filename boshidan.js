@@ -1254,3 +1254,66 @@
 // }
 
 // console.log(bbc([12, 33, 11, 5, 2, 7]));
+
+// ---------------------------------------------8 dars
+
+// 1 masala
+
+// repeat metodini qo'lda yasash
+
+// function bbc(str, marta) {
+
+//     let sum = ""
+//     for (let i = 0; i < marta; i++) {
+//      sum += str
+//     }
+//     return sum
+// }
+
+// console.log(bbc("24", 5));
+
+// 2 masala
+
+// yulduzchalardan shakillar chizish
+
+// function bbc(num) {
+//   let result = "";
+//   for (let i = 0; i < num; i++) {
+//     for (let j = 0; j < num; j++) {
+//       if (i === 0 || j === 0 || i === num - 1 || j === num - 1) {
+//         result += " *";
+//       } else if (i + j >= num - 1) {
+//         result += " *";
+//       } else {
+//         result += "  ";
+//       }
+//     }
+//     result += "\n";
+//   }
+//   return result;
+// }
+
+// console.log(bbc(10));
+
+// 3 masala
+
+// yulduzchalardan shakillar chizish
+
+// function bbc(num) {
+//   let result = "";
+//   for (let i = 0; i < num; i++) {
+//     for (let j = 0; j < num; j++) {
+//       if (i === 0 || j === 0 || i === num - 1 || j === num - 1) {
+//         result += " *";
+//       } else if (i + j <= num - 1) {
+//         result += " *";
+//       } else {
+//         result += "  ";
+//       }
+//     }
+//     result += "\n";
+//   }
+//   return result;
+// }
+
+// console.log(bbc(10));
