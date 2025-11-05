@@ -1230,4 +1230,276 @@
 //   ])
 // );
 
+// ------------------------------------------------substringni tushunish uchun
+
+// function bbc(str) {
+//   let sum = "";
+
+//   for (let i = 0; i < str.length; i++) {
+//     let string = "";
+//     console.log(`\n🌀 Boshlanish i = ${i}, harf = '${str[i]}'`);
+
+//     for (let j = i; j < str.length; j++) {
+//       let harf = str[j];
+//       let takror = false;
+
+//       console.log(`   🔹 J = ${j}, tekshirilayotgan harf = '${harf}'`);
+
+//       // K sikl - harf ilgari string ichida bormi?
+//       for (let k = 0; k < string.length; k++) {
+//         console.log(`      🔸 K = ${k}, taqqoslash '${string[k]}' === '${harf}'`);
+//         if (string[k] === harf) {
+//           takror = true;
+//           console.log(`      ⚠️  Takror topildi ('${harf}') -> break`);
+//           break;
+//         }
+//       }
+
+//       // Agar takror topilsa — j siklni to‘xtatamiz
+//       if (takror) {
+//         break;
+//       } else {
+//         string += harf;
+//         console.log(`      ✅ Qo‘shildi: string = "${string}"`);
+//       }
+//     }
+
+//     // Eng uzun takrorlanmagan substringni yangilash
+//     if (string.length > sum.length) {
+//       sum = string;
+//       console.log(`👉 Hozircha eng uzun = "${sum}"`);
+//     }
+//   }
+
+//   console.log(`\n🏁 Yakuniy eng uzun substring: "${sum}"`);
+//   return sum;
+// }
+
+// bbc("abcabcbb");
+
+// ------------------------------------------------substringni tushunish uchun
+
+// function bbc(str) {
+//   let sum = "";
+
+//   for (let i = 0; i < str.length; i++) {
+//     let string = "";
+//     console.log(`\n🌀 Boshlanish i = ${i} (${str[i]})`);
+
+//     for (let j = i; j < str.length; j++) {
+//       let harf = str[j];
+//       let takror = false;
+
+//       console.log(`   🔹 J = ${j}, harf = '${harf}'`);
+      
+//       // k sikl: harf stringda bor-yo'qligini tekshiradi
+//       for (let k = 0; k < string.length; k++) {
+//         console.log(`      🔸 K = ${k}, string[${k}]='${string[k]}'`);
+//         if (string[k] === harf) {
+//           takror = true;
+//           console.log(`      ⚠️  Takror topildi ('${harf}')`);
+//           break; // bu break faqat k siklni to‘xtatadi
+//         }
+//       }
+
+//       if (takror) {
+//         console.log(`   ❌ Takror topildi → j-sikl to‘xtaydi`);
+//         break; // bu break j siklni to‘xtatadi
+//       } else {
+//         string += harf;
+//         console.log(`   ✅ Qo‘shildi: string="${string}"`);
+//       }
+//     }
+
+//     if (string.length > sum.length) {
+//       sum = string;
+//       console.log(`👉 Eng uzun hozir: "${sum}"`);
+//     } else {
+//       console.log(`👉 Eng uzun o‘zgarmadi: "${sum}"`);
+//     }
+//   }
+
+//   console.log(`\n🏁 Yakuniy eng uzun substring: "${sum}"`);
+//   return sum;
+// }
+
+// bbc("abcabcbb");
+
+// -------------------------------------------asinxron va sinxron
+
+// --------------------------------------------sinxron ishlashi
+
+// function nonPishirish() {
+//   return new Promise((resolve) => {
+//     console.log("🍞 Non pishirish boshlandi...");
+//     setTimeout(() => {
+//       console.log("✅ Non pishdi!");
+//       resolve("Non tayyor");
+//     }, 2000); // 2 soniya
+//   });
+// }
+
+// function choyQaynatish() {
+//   return new Promise((resolve) => {
+//     console.log("☕ Choy qaynatish boshlandi...");
+//     setTimeout(() => {
+//       console.log("✅ Choy tayyor!");
+//       resolve("Choy tayyor");
+//     }, 1000); // 1 soniya
+//   });
+// }
+
+// function dasturxonYozish() {
+//   return new Promise((resolve) => {
+//     console.log("🍽️ Dasturxon yozilmoqda...");
+//     setTimeout(() => {
+//       console.log("✅ Dasturxon yozildi!");
+//       resolve("Dasturxon tayyor");
+//     }, 500); // 0.5 soniya
+//   });
+// }
+
+// async function tayyorlanishKetmaket() {
+//   console.log("Ishlar ketma-ket boshlandi...\n");
+
+//   const non = await nonPishirish();
+//   const choy = await choyQaynatish();
+//   const dasturxon = await dasturxonYozish();
+
+//   console.log("\n🍽️ Hammasi tugadi!");
+//   console.log(non, choy, dasturxon);
+// }
+
+// tayyorlanishKetmaket();
+
+// ---------------------------------------------------asinxron ishlashi
+
+// function nonPishirish() {
+//   return new Promise((resolve) => {
+//     console.log("🍞 Non pishirish boshlandi...");
+//     setTimeout(() => {
+//       console.log("✅ Non pishdi!");
+//       resolve("Non tayyor");
+//     }, 2000); // 2 soniya
+//   });
+// }
+
+// function choyQaynatish() {
+//   return new Promise((resolve) => {
+//     console.log("☕ Choy qaynatish boshlandi...");
+//     setTimeout(() => {
+//       console.log("✅ Choy tayyor!");
+//       resolve("Choy tayyor");
+//     }, 1000); // 1 soniya
+//   });
+// }
+
+// function dasturxonYozish() {
+//   return new Promise((resolve) => {
+//     console.log("🍽️ Dasturxon yozilmoqda...");
+//     setTimeout(() => {
+//       console.log("✅ Dasturxon yozildi!");
+//       resolve("Dasturxon tayyor");
+//     }, 500); // 0.5 soniya
+//   });
+// }
+
+
+// async function tayyorlanishParallel() {
+//   console.log("Ishlar parallel boshlandi...\n");
+
+//   const [non, choy, dasturxon] = await Promise.all([
+//     nonPishirish(),
+//     choyQaynatish(),
+//     dasturxonYozish()
+//   ]);
+
+//   console.log("\n🍽️ Hammasi tugadi!");
+//   console.log(non, choy, dasturxon);
+// }
+
+// tayyorlanishParallel();
+
+// -----------------------------------------------------
+
+// let sum = [
+//   [ [ 0, 1 ], [ 21, 43 ], 29 ],
+//   [ [ 0, 2 ], [ 21, 11 ], -3 ],
+//   [ [ 0, 3 ], [ 21, 45 ], 31 ],
+//   [ [ 0, 4 ], [ 21, 4 ], -10 ],
+//   [ [ 0, 5 ], [ 21, 32 ], 18 ],
+//   [ [ 0, 6 ], [ 21, 54 ], 40 ],
+//   [ [ 1, 2 ], [ 43, 11 ], 19 ],
+//   [ [ 1, 3 ], [ 43, 45 ], 53 ],
+//   [ [ 1, 4 ], [ 43, 4 ], 12 ],
+//   [ [ 1, 5 ], [ 43, 32 ], 40 ],
+//   [ [ 1, 6 ], [ 43, 54 ], 62 ],
+//   [ [ 2, 3 ], [ 11, 45 ], 21 ],
+//   [ [ 2, 4 ], [ 11, 4 ], -20 ],
+//   [ [ 2, 5 ], [ 11, 32 ], 8 ],
+//   [ [ 2, 6 ], [ 11, 54 ], 30 ],
+//   [ [ 3, 4 ], [ 45, 4 ], 14 ],
+//   [ [ 3, 5 ], [ 45, 32 ], 42 ],
+//   [ [ 3, 6 ], [ 45, 54 ], 64 ],
+//   [ [ 4, 5 ], [ 4, 32 ], 1 ],
+//   [ [ 4, 6 ], [ 4, 54 ], 23 ],
+//   [ [ 5, 6 ], [ 32, 54 ], 51 ]
+// ]
+
+// let kichik = sum[0][2]
+
+
+// for (let i = 0; i < sum.length; i++) {
+// if (kichik > 0 && sum[i][2] > 0) {
+//     if (kichik > sum[i][2]) {
+//         kichik = sum[i][2]
+//     }
+//     }
+// }
+
+// let result = []
+// for (const element of sum) {
+//     // console.log(element[2]);
+//     console.log(kichik.includes(element[2]));
+    
+//     // if (element[2].includes(kichik)) {
+//     //     result[result.length] = element[1]
+//     // }
+    
+// }
+
+// console.log(kichik);
+
+
+
+// let kichik = 11
+// let sum = [21, 43, 11, 45, 4, 32, 54]
+// let res = []
+// for (let i = 0; i < sum.length; i++) {
+//    if(sum[i] === kichik) {
+//     res.push(kichik)
+//    }
+// }
+
+// console.log(kichik);
+
+
+// let sum = [
+//   [ [ 0, 2 ], [ 21, 11 ], -15 ],
+//   [ [ 0, 4 ], [ 21, 4 ], -12 ],
+//   [ [ 2, 4 ], [ 11, 4 ], -22 ],
+//   [ [ 4, 5 ], [ 4, 32 ], -1 ]
+// ]
+
+// let kichik = sum[0][2]
+
+
+// for (let i = 0; i < sum.length; i++) {
+//     if (kichik < sum[i][2]) {
+//         kichik = sum[i][2]
+//     }
+    
+// }
+
+// console.log(kichik);
 

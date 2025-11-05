@@ -74,3 +74,66 @@
 // // 5. Natijalarni chiqaramiz
 // console.log("String massiv:", strings);
 // console.log("Number massiv:", numbers);
+
+// -----------------------------------------------4 masala
+
+// objektga qiymat qo'shish usullaridan
+
+// function bbc(arr) {
+//   let total = {};
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       total["positiveSum"] = (total["positiveSum"] || 0) + arr[i];
+//     } else {
+//       total["negativeSum"] = (total["negativeSum"] || 0) + arr[i];
+//     }
+//   }
+
+//   return total;
+// }
+
+// console.log(bbc([1, -2, 3, -4, 5])); 
+// // { positiveSum: 9, negativeSum: -6 }
+
+// ------------------------------------------------5 masala
+
+// arraydagi eng katta va eng kichik elementlarni orasini 0 ga tenglang
+
+// function bbc(arr) {
+//   let katta = 0;
+//   let kichik = arr[0];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let belgi = arr[i];
+//     if (katta < belgi) {
+//       katta = belgi;
+//     }
+//     if (kichik > belgi) {
+//       kichik = belgi;
+//     }
+//   }
+
+//   let minIndex = arr.indexOf(kichik);
+//   let maxIndex = arr.indexOf(katta);
+
+//   let kichikIndex = minIndex < maxIndex ? minIndex : maxIndex;
+//   let kattaIndex = minIndex > maxIndex ? minIndex : maxIndex;
+
+//   let obj = {};
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (i > kichikIndex && i < kattaIndex) {
+//       obj[i] = 0;
+//       // console.log(obj[i]);
+//     } else {
+//       obj[i] = arr[i];
+//       // console.log(obj[i]);
+//     }
+//   }
+//   let result = Object.values(obj);
+
+//   return result;
+// }
+
+// console.log(bbc([2, 54, 4, 11, 1, 34, 11]));

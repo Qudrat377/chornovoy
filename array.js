@@ -106,6 +106,8 @@
 
 // -----------------------------------------------------7 masala
 
+// ichida raqam bor so'zlarni arrayga solish
+
 // function bbc(arr) {
 //   let raqamli = [];
 
@@ -132,3 +134,37 @@
 // console.log(bbc(["salom", "a14", "b", "3d3"])); 
 // // 👉 Natija: ["a14", "3d3"]
 
+// ----------------------------------------------------8 masala
+
+// array elementlari orasidagi bir xil qo'shni elamentlarni o'chirish
+
+// function bbc(arr) {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === arr[i + 1]) {
+//       i++;
+//     } else {
+//       sum.push(arr[i]);
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc([12, 43, 43, 23, 23, 54, 12, 23]));
+
+// -------------------------------------------------------9 masala
+
+// ikkinchi argumetdagi index bo'yicha arraydan ibtta element o'chirish
+
+// function bbc(arr, ochirish) {
+
+//     let sum = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i !== ochirish) {
+//             sum.push(arr[i])
+//         }
+//     }
+// return sum
+// }
+
+// console.log(bbc([54, 23, 65, 12], 1));

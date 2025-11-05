@@ -37,7 +37,7 @@
 //       natija += belgi;
 //     } else {
 //       sum.push(natija.length);
-      
+
 //       natija = "";
 //     }
 //   }
@@ -47,7 +47,6 @@
 // }
 
 // console.log(bbc("salom hammaga nima gaplar qalay"));
-
 
 // --------------------------------------------------------2 masala
 
@@ -68,7 +67,7 @@
 //         }
 //     }
 //   }
-// if (son !== "") sum.push(son) 
+// if (son !== "") sum.push(son)
 
 //   return sum
 // }
@@ -92,7 +91,6 @@
 
 // console.log(bbc("salom 5chilar nima gap"));      // raqam yo'q
 // console.log(bbc("salom nima"));  // raqam bor
-
 
 // ---------------------------------------------------------4 masala
 
@@ -126,7 +124,6 @@
 // console.log(bbc("12javascript12"));
 
 // -----------------------------------------------5 masala
-
 
 // SSttrriinngg shu tartibda chiqarilsin
 
@@ -190,7 +187,6 @@
 
 // --------------------------------------------------------8 masala
 
-
 // stringdagi so'zlarni arrayga alohida qilib solish
 
 // function bbc(str) {
@@ -211,4 +207,156 @@
 
 // console.log(bbc("Solve programming problems in Javascript or TypeScript"));
 
+// ------------------------------------------------9 masala
+
+// skoplarni balansini tekshirish
+
+// // Qavslar muvozanatini tekshiruvchi funksiya
+// function muozanatlanganmi(str) {
+//   let joylash = []; // ochilgan qavslarni saqlaydigan stack
+//   let moslik = {
+//     ")": "(",
+//     "]": "[",
+//     "}": "{"
+//   };
+
+//   for (const belgi of str) {
+//     // Agar ochuvchi qavs bo‘lsa — stackga qo‘shamiz
+//     if (["(", "[", "{"].includes(belgi)) {
+//       joylash.push(belgi);
+//       console.log(`+ Ochildi: ${belgi}, Stack: [${joylash.join(", ")}]`);
+//     }
+
+//     // Agar yopuvchi qavs bo‘lsa — oxirgisini solishtiramiz
+//     else if ([")", "]", "}"].includes(belgi)) {
+//       const ochilgan = joylash.pop();
+//       console.log(`- Yopildi: ${belgi}, Tekshirilmoqda: ${ochilgan} ↔ ${moslik[belgi]}`);
+
+//       // Noto‘g‘ri moslik bo‘lsa — false qaytaramiz
+//       if (ochilgan !== moslik[belgi]) {
+//         console.log("❌ Noto‘g‘ri tartib!");
+//         return false;
+//       }
+//     }
+//   }
+
+//   // Hammasi yopilgan bo‘lsa — stack bo‘sh bo‘ladi
+//   const natija = joylash.length === 0;
+//   console.log(natija ? "✅ Muvozanat to‘g‘ri" : "⚠️ Yopilmagan qavslar qoldi:", joylash);
+//   return natija;
+// }
+
+// // Sinovlar:
+// console.log(muozanatlanganmi("({[()]})"));  // ✅ true
+// console.log(muozanatlanganmi("({[})"));     // ❌ false
+// console.log(muozanatlanganmi("({[]}"));     // ⚠️ false
+
+// --------------------------------------------------------------10 masala
+
+// strdagi harflarning necha marta takrorlanganligini topish
+
+// function harflarniSanash(str) {
+//   let sum = {}; // Natijani saqlash uchun obyekt
+
+//   for (let i = 0; i < str.length; i++) {
+//     let harf = str[i];
+//     // Agar harf mavjud bo'lsa, qiymatni ol; yo'q bo'lsa 0 qil
+//     let oldQiymat = sum[harf] || 0;
+//     let yangiQiymat = oldQiymat + 1;
+
+//     sum[harf] = yangiQiymat; // Yangilangan qiymatni obyektga saqlaymiz
+
+//     // Bosqichma-bosqich chiqarish
+//     console.log(
+//       `Harf: "${harf}", Old qiymat: ${oldQiymat}, +1 → Yangi qiymat: ${yangiQiymat}`
+//     );
+//   }
+
+//   console.log("✅ Natija:", sum);
+//   return sum;
+// }
+
+// // Sinov
+// harflarniSanash("javascript");
+
+// --------------------------------------------------------11 masala
+
+// anagramlar yani ikki so'zni tarkibi xam bir xil lekin joylashish o'rni xar xil so'zlar
+
+// function bbc(str, matn) {
+//   // 1️⃣ Agar uzunliklar teng bo'lmasa, anagram bo'lishi mumkin emas
+//   if (str.length !== matn.length) return false;
+
+//   // 2️⃣ matnni arrayga aylantiramiz, harflarni alohida ishlash uchun
+//   let matnArr = matn.split(""); // masalan "silent" → ["s","i","l","e","n","t"]
+
+//   let sum = ""; // mos kelgan harflarni saqlash uchun
+
+//   // 3️⃣ strdagi harflarni tekshirish
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = 0; j < matnArr.length; j++) {
+//       // 4️⃣ Agar str[i] harfi matnArr[j] bilan mos kelsa
+//       if (str[i] === matnArr[j]) {
+//         sum += str[i]; // harfni sumga qo'shamiz
+//         matnArr[j] = null; // shu harfni ishlatdik, keyin yana ishlamasligi uchun
+
+//         console.log(matnArr); // o'zim qo'shdim qo'nsolni jarayonni ko'rib borish uchun
+
+//         break; // keyingi str[i] ga o'tamiz
+//       }
+//     }
+//   }
+
+//   // 5️⃣ Oxirida sum str bilan bir xil bo'lsa, true
+//   return sum === str;
+// }
+
+// // 🔹 Sinov
+// console.log(bbc("listen", "silent")); // true
+// console.log(bbc("hello", "world")); // false
+
+// ---------------------------------------------------------12 masala
+
+// function engUzoqSubstring(str) {
+//   let engUzoq = ""; // eng uzun substringni saqlaymiz
+
+//   // 1️⃣ Tashqi sikl: har bir harfni boshlanish nuqtasi sifatida olamiz
+//   for (let start = 0; start < str.length; start++) {
+//     let substring = ""; // hozir hosil qilinayotgan substring
+
+//     // 2️⃣ Ichki sikl: startdan boshlab harflarni qo'shamiz
+//     for (let i = start; i < str.length; i++) {
+//       let harf = str[i];
+//       let takror = false;
+
+//       // 3️⃣ Tekshirish: harf substring ichida takrorlanganmi?
+//       for (let j = 0; j < substring.length; j++) {
+//         if (substring[j] === harf) {
+//           takror = true;
+//           break; // takror topildi → ichki sikldan chiqamiz
+//         }
+//       }
+
+//       if (takror) {
+//         console.log(`Takror topildi: "${harf}" -> substring to'xtadi: "${substring}"`);
+//         break; // substring tugadi
+//       } else {
+//         substring += harf; // harfni substringga qo'shamiz
+//         console.log(`Harf qo'shildi: "${harf}" -> substring hozir: "${substring}"`);
+//       }
+//     }
+
+//     // 4️⃣ Agar hozirgi substring eng uzun substringdan uzun bo'lsa → yangilaymiz
+//     if (substring.length > engUzoq.length) {
+//       engUzoq = substring;
+//       console.log(`Eng uzun yangilandi: "${engUzoq}"`);
+//     }
+//   }
+
+//   return engUzoq;
+// }
+
+// // 🔹 Sinov
+// let natija = engUzoqSubstring("abcabcbb");
+// console.log("✅ Eng uzun substring:", natija);
 

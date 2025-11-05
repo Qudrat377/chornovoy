@@ -468,7 +468,6 @@
 
 // katta kichikni topish
 
-
 // function bbc(arr) {
 // let sum = arr[0]
 
@@ -512,4 +511,147 @@
 
 // console.log(bbc(6));
 
+// -----------------------------------------------------17 masala
+
+// birinchi va ikkinchi katta sonlarni topish
+
+// function bbc(arr) {
+//   let max1 = -Infinity; // eng katta son
+//   let max2 = -Infinity; // ikkinchi eng katta son
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let num = arr[i];
+
+//     if (num > max1) {
+//       // yangi eng katta topildi
+//       max2 = max1; // eski max1 endi ikkinchi bo‘ladi
+//       max1 = num;  // yangi max1
+//     } else if (num > max2) {
+//       // max1 dan kichik, lekin max2 dan katta bo‘lsa
+//       max2 = num;
+//     }
+//   }
+
+//   return max1 * max2;
+// }
+
+// console.log(bbc([1, 10, 2, 6, 5])); // 60
+
+// ---------------------------------------------------------18 masala
+
+// // 🔹 Ikkilikdan 10-likka o‘tkazuvchi funksiya (bosqichma-bosqich ko‘rsatadi)
+
+// function ikkilikdanOnlikka(ikkilik) {
+//   let son = 0;
+//   let daraja = 0;
+
+//   console.log("| Belgilar | Daraja | Hisob      | Yig‘indi |");
+//   console.log("| -------- | ------ | ---------- | -------- |");
+
+//   for (let i = ikkilik.length - 1; i >= 0; i--) {
+//     let raqam = Number(ikkilik[i]);           // belgini raqamga aylantirish
+//     let hisob = raqam * (2 ** daraja);        // 2 ning darajasi bilan ko‘paytirish
+//     son += hisob;                             // yig‘indiga qo‘shish
+
+//     // Har bir bosqichni jadval shaklida chiqarish
+//     console.log(`| ${raqam} | ${daraja} | ${raqam} × 2^${daraja} = ${hisob} | ${son} |`);
+
+//     daraja++; // keyingi darajaga o‘tish
+//   }
+
+//   console.log(`✅ Yakuniy natija (10-likda): ${son}`);
+//   return son;
+// }
+
+// // 🔹 Sinov
+// ikkilikdanOnlikka("1011");  // 1011 = 11
+
+// ------------------------------------------------------------19 masala
+
+// kadine algaritimi
+
+// function bbc(arr) {
+//   let kattaSon = arr[0];
+//   let hozirgiYigindi = arr[0];
+//   let boshi = 0;
+//   let tugashJoyi = 0;
+//   let hozirchaBoshi = 0;
+
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > hozirgiYigindi + arr[i]) {
+//       hozirgiYigindi = arr[i];
+//       hozirchaBoshi = i;
+//     } else {
+//       hozirgiYigindi += arr[i];
+//     }
+//     if (hozirgiYigindi > kattaSon) {
+//       kattaSon = hozirgiYigindi;
+//       boshi = hozirchaBoshi;
+//       tugashJoyi = i;
+//     }
+//   }
+//   let Kadine = [];
+
+//   for (let i = boshi; i <= tugashJoyi; i++) {
+//     Kadine[Kadine.length] = arr[i];
+//   }
+//   return Kadine;
+// }
+
+// console.log(bbc([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
+// --------------------------------------------------------20 masala
+
+// arraydagi sonlarni yig'indisi keyingi argumetdagi qiymatga eng yaqinini topish
+
+// function bbc(arr, yaqin) {
+//   let engYaqinFarq = Infinity; // boshlanishda eng katta farq
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       const sum = arr[i] + arr[j];
+//       const diff = Math.abs(sum - yaqin); // farqni topamiz (musbat qilib)
+
+//       if (diff < engYaqinFarq) {
+//         engYaqinFarq = diff;
+//         result = [[arr[i], arr[j]]]; // yangi eng yaqin juftlik
+//       } else if (diff === engYaqinFarq) {
+//         result.push([arr[i], arr[j]]); // teng bo‘lsa, qo‘shamiz
+//       }
+//     }
+//   }
+
+//   return result.flat(); // juftliklarni birlashtirib qaytaramiz
+// }
+
+// console.log(bbc([21, 43, 11, 45, 4, 32, 54], 79));
+
+// ---------------------------------------------------------------21 masala
+
+// arraydagi eng katta va eng kichik elementlarni orasini 0 ga tenglang
+
+// function bbc(arr) {
+//   let katta = Math.max(...arr);
+//   let kichik = Math.min(...arr);
+
+//   // eng kichik va eng katta elementlarning indexlarini topamiz
+//   let minIndex = arr.indexOf(kichik);
+//   let maxIndex = arr.indexOf(katta);
+
+//   // oraliqni topish uchun indekslarni tartiblaymiz
+//   let start = Math.min(minIndex, maxIndex);
+//   let end = Math.max(minIndex, maxIndex);
+
+//   // yangi massiv hosil qilamiz
+//   let result = arr.slice(); // asl massiv nusxasi
+
+//   for (let i = start + 1; i < end; i++) {
+//     result[i] = 0; // orasidagi elementlarni 0 qilamiz
+//   }
+
+//   return result;
+// }
+
+// console.log(bbc([2, 54, 4, 11, 1, 34, 11]));
 
