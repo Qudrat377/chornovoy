@@ -29,6 +29,8 @@
 
 // --------------------------------------------------------2 masala
 
+// animal classini ochish name, species maydonlarini qo'shish va Dog Cat Lion metodlarini qo'shish
+
 // class Animal {
 //   constructor(name, species) {
 //     this.name = name;
@@ -66,6 +68,8 @@
 
 // -------------------------------------------------------------3 masala
 
+// product class price maydon va istalgan metod qo'shish
+
 // class Product {
 //   constructor(name, price) {
 //     this.name = name;
@@ -95,6 +99,8 @@
 
 // -----------------------------------------------------------4 masala
 
+// users clasini ochish name, species maydonlarini qo'shish va login va logout metodlarini qo'shish
+
 // class User {
 //   constructor(username, password) {
 //     this.username = username;
@@ -123,6 +129,8 @@
 // console.log(log.logout());
 
 // --------------------------------------------------5 masala
+
+// flight class filghtNumber, departureTime, destination maydon va bookSeat(), canelSeat(),getAvailableSeats() metodlar
 
 // class Filght {
 //   constructor(filghtNumber, departureTime, destination) {
@@ -182,3 +190,85 @@
 // bookFlightByNumber(2);
 // bookFlightByNumber(2);
 // cancelFlightByNumber(2);
+
+// -------------------------------------------------6 masala
+
+// course class CourseName, couseCode maydon va addStudent, removeStudent metodlari
+
+// let student = []
+
+// class Course {
+//   constructor(CourseName, couseCode) {
+//     this.CourseName = CourseName
+//     this.couseCode = couseCode
+//     this.students = []
+//   }
+//   addStudend(studentName) {
+//     this.students.push(studentName)
+//     console.log(`${studentName} kursga qo'shildi`);
+
+//   }
+//   removeStudent(studentName) {
+// this.students = this.students.filter(s => s !== studentName)
+// console.log(`${studentName} kursdan o'chirildi`);
+//   }
+// }
+
+// const course = new Course("JavaSkript", "JS101")
+
+// course.addStudend("Qudrat")
+// course.addStudend("Vali")
+// course.removeStudent("vali")
+
+// ----------------------------------------------------7 masala
+
+// Wallet class balance maydon addFunds, speanFunds metodlar
+
+// class Wallet {
+//     constructor(balance) {
+//         this.balance = balance
+//     }
+
+//     addFunds(velue) {
+// this.balance += velue
+// console.log(this.balance);
+
+//     }
+//     spendFunds(value) {
+//         if (this.balance > 0 && value > 0 && this.balance >= value) {
+//           this.balance -= value
+//         }
+
+//     }
+// }
+
+// let popolnit = new Wallet(0)
+
+// popolnit.addFunds(200)
+// popolnit.spendFunds(32)
+// console.log(popolnit);
+
+// --------------------------------------------------8 masala
+
+// notification class message date maydon va sendNotification clearNatafication metod
+
+// class Notification {
+//     constructor(message, date) {
+//         this.message = message = []
+//         this.date = date
+//     }
+//     sendNotification(value) {
+// this.message = value
+// this.date = Date.now()
+//     }
+//     clearNotification() {
+// this.message = ""
+// this.date = 0
+//     }
+// }
+
+// let xabar = new Notification("sms")
+// xabar.sendNotification("qachon kelasan")
+// xabar.sendNotification("soat nechi bo'ldi")
+// // xabar.clearNotification()
+// console.log(xabar);
