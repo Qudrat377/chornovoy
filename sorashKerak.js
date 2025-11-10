@@ -1,3 +1,58 @@
+// -----------------------------------------o'zgaruvchilar
+
+// class Flight {
+//   constructor(num, time, dest) {
+//     this.flightNumber = num;
+//     this.departureTime = time;
+//     this.destination = dest;
+//   }
+
+//   static bookSeat(flights, num) {
+//     const flight = flights.find(f => f.flightNumber === num);
+//     if (flight) console.log(`✅ ${num}-parvoz band qilindi`);
+//     else console.log("❌ Parvoz topilmadi");
+//   }
+// }
+
+// function bbc() {
+//   let yolovchilar = [
+//     new Flight(1, "10:00", "Toshkent"),
+//     new Flight(2, "11:00", "Samarqand"),
+//   ];
+
+//   Flight.bookSeat(yolovchilar, 2);
+// }
+
+// bbc();
+// ------------------------------------------
+
+// class Flight {
+//   static yolovchilar = []; // statik baza (hamma obyektlarga umumiy)
+
+//   constructor(num, time, dest) {
+//     this.flightNumber = num;
+//     this.departureTime = time;
+//     this.destination = dest;
+//     Flight.yolovchilar.push(this);
+//   }
+
+//   static bookSeat(num) {
+//     const flight = Flight.yolovchilar.find(f => f.flightNumber === num);
+//     if (flight) console.log(`✅ ${num}-parvoz band qilindi`);
+//     else console.log("❌ Parvoz topilmadi");
+//   }
+// }
+
+// // Yangi parvozlar avtomatik bazaga tushadi
+// new Flight(1, "10:00", "Toshkent");
+// new Flight(2, "12:00", "Samarqand");
+
+// Flight.bookSeat(1);
+
+
+
+// ------------------------------------------------
+
 // const restaurant = {
 
 //     name: "Rayhon Milliy Taomlari",

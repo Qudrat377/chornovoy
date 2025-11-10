@@ -655,3 +655,20 @@
 
 // console.log(bbc([2, 54, 4, 11, 1, 34, 11]));
 
+// -----------------------------------------------------22 masala
+
+// kiritilgan son 4 ning darajasimi
+
+// function bbc(num) {
+//   if (num < 1) return false;
+//   while (num % 4 === 0) {
+//     num /= 4; // har safar 4 ga bo‘lamiz
+//   }
+//   return num === 1;
+// }
+
+// console.log(bbc(16)); // true (4²)
+// console.log(bbc(64)); // true (4³)
+// console.log(bbc(24)); // false
+// console.log(bbc(8));  // false
+

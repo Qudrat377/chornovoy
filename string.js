@@ -360,3 +360,111 @@
 // let natija = engUzoqSubstring("abcabcbb");
 // console.log("✅ Eng uzun substring:", natija);
 
+// ------------------------------------------------------13 masala
+
+// strdagi sonlarni teskari aylantirish
+
+// function bbc(str) {
+//   let teskari = [];
+
+//   // 1. Raqamlarni teskari tartibda yig‘amiz
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     if (str[i] >= '0' && str[i] <= '9') {
+//       teskari.push(str[i]);
+//     }
+//   }
+
+//   // 2. Yangi string yasaymiz
+//   let sum = "";
+//   let j = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] >= '0' && str[i] <= '9') {
+//       sum += teskari[j];
+//       j++;
+//     } else {
+//       sum += str[i];
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc("ab1cd2ef3gh")); // "ab3cd2ef1gh"
+
+// -------------------------------------------------------14 masala
+
+// array ichidagi so'zlar faqat alifbo tartibida o'sganlarni qaytarish
+
+// function bbc(arr) {
+//   let harf = "abcdefghijklmnopqrstuvwxyz";
+//   let natija = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let soz = arr[i];
+//     let osuvchi = true;
+
+//     for (let j = 0; j < soz.length - 1; j++) {
+//       // harflar tartibini aniqlash uchun indexni solishtiramiz
+//       let hozirgi = harf.indexOf(soz[j]);
+//       let keyingi = harf.indexOf(soz[j + 1]);
+
+//       if (hozirgi > keyingi) {
+//         osuvchi = false;
+//         break;
+//       }
+//     }
+
+//     if (osuvchi) {
+//       natija.push(soz);
+//     }
+//   }
+
+//   return natija;
+// }
+
+// console.log(bbc(["abc", "dog", "xyz", "apple"]));
+// // 👉 ["abc", "xyz"]
+
+// --------------------------------------------------15 masala
+
+// stingdagi unli harflarni teskari qilish
+
+// function bbc(str) {
+//   let unlilar = "AEIOUaeiou";
+//   let hozircha = "";
+//   let natija = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+//     for (let j = 0; j < unlilar.length; j++) {
+//       if (belgi === unlilar[j]) {
+//         hozircha += belgi;
+//       }
+//     }
+//   }
+
+//   let reversed = "";
+//   for (let i = hozircha.length - 1; i >= 0; i--) {
+//     reversed += hozircha[i];
+//   }
+
+//   let sanash = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+//     let unlimi = false;
+//     for (let j = 0; j < reversed.length; j++) {
+//       if (belgi === reversed[j]) {
+//         unlimi = true;
+//         break;
+//       }
+//     }
+//     if (unlimi) {
+//       natija += reversed[sanash];
+//       sanash ++
+//     } else {
+//       natija += belgi;
+//     }
+//   }
+//   return natija;
+// }
+
+// console.log(bbc("IceCreAm"));

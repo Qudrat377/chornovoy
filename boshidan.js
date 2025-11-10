@@ -1318,48 +1318,180 @@
 
 // console.log(bbc(10));
 
-// -----------------------------------------------------
+// -----------------------------------------------------4 masala
 
-// class Stack {
-//   constructor() {
-//     this.items = []; // bu yerda biz elementlarni saqlaymiz
-//   }
+// arraydan ikkinchi argumentchalik kesib arrayni ortidan qo'shib qo'yish
 
-//   // 🔹 yangi element qo‘shish
-//   push(value) {
-//     this.items[this.items.length] = value;
-//     return this.items; // yangi massivni qaytaradi
-//   }
-
-//   // 🔹 oxirgi elementni o‘chirish
-//   pop() {
-//     if (this.items.length === 0) {
-//       return "Stack bo‘sh!";
+// function bbc(arr, kesish) {
+//     let kesilgan = []
+//     let sum = []
+//     for (let i = 0; i < arr.length; i++) {
+//        if (i <= kesish) {
+//         sum.push(arr[i])
+//        }else {
+// kesilgan.push(arr[i])
+//        }
 //     }
-//     const res = this.items[this.items.length - 1];
-//     this.items.length = this.items.length - 1;
-//     return res; // o‘chirilgan elementni qaytaradi
-//   }
-
-//   // 🔹 stack bo‘sh yoki yo‘qligini tekshirish
-//   isEmpty() {
-//     return this.items.length === 0;
-//   }
-
-//   // 🔹 stackdagi barcha elementlarni ko‘rish
-//   show() {
-//     return this.items;
-//   }
+// kesilgan.push(sum)
+// return kesilgan.flat(Infinity)
 // }
 
-// // 🔸 Stack obyektini yaratamiz
-// let s = new Stack();
+// console.log(bbc([1, 2, 3, 4, 5, 6, 7], 3));
 
-// console.log(s.push(10));  // [10]
-// console.log(s.push(20));  // [10, 20]
-// console.log(s.push(30));  // [10, 20, 30]
+// -------------------------------------------------5 masala
 
-// console.log("Pop qilindi:", s.pop()); // 30
-// console.log("Hozirgi holat:", s.show()); // [10, 20]
+// objdagi number typedagilarni hisoblang
 
-// console.log("Bo‘shmi:", s.isEmpty()); // false
+// let obj = {
+//   name: "Usmon",
+//   age: 22,
+//   surname: "Aliyev",
+//   birthYear: "2000",
+//   money: 4000,
+// };
+// obj.profetion = "IT"
+// obj.salary = 55
+// obj.lang = "uzb"
+
+// function bbc(qiymat) {
+//   let sum = 0;
+//   for (const key in qiymat) {
+//     if (typeof qiymat[key] === "number") {
+//       sum += qiymat[key];
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(obj));
+
+// -----------------------------------------------------6 masala
+
+// // split metodini qo'lda yasash
+
+// function bbc(str, belgi) {
+//   let sum = [];
+//   let soz = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === belgi) {
+//       sum.push(soz);
+//       soz = "";
+//     } else if (belgi === "") {
+//       sum.push(str[i]);
+//     } else {
+//       soz += str[i];
+//     }
+//   }
+//   let summa = [];
+//   if (belgi === "" && str.length === sum.length) {
+//     for (let i = 0; i < sum.length; i++) {
+//       summa.push(sum[i]);
+//     }
+//     if (summa.length === str.length) {
+//       return summa;
+//     }
+//   }
+//   sum.push(soz);
+//   return sum;
+// }
+
+// console.log(bbc("salom dunyo", ""));
+
+// ----------------------------------------------------7 masala
+
+// son 4 ning darajasimi
+
+// function bbc(num) {
+
+// do {
+//     if (num === 1)  return true
+//     if (num % 4 !== 0) return false
+//     num = num / 4
+// } while (num >= 1);
+
+// return false
+// }
+
+// console.log(bbc(64));
+
+// ----------------------------------------------------8 masala
+
+// arrydagi elementlarni teskari qilish
+
+// function bbc(arr) {
+//   let sum = [];
+//   for (let i = arr.length -1; i >= 0; i--) {
+// sum.push(arr[i])
+//   }
+//   return sum
+// }
+
+// console.log(bbc(["s", "a", "l", "o", "m", " ", "d", "u", "n", "y", "o"]))
+
+// --------------------------------------------------9 masala
+
+// stingdagi unli harflarni teskari qilish
+
+// function bbc(str) {
+//   let unlilar = "AEIOUaeiou";
+//   let hozircha = "";
+//   let natija = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+//     for (let j = 0; j < unlilar.length; j++) {
+//       if (belgi === unlilar[j]) {
+//         hozircha += belgi;
+//       }
+//     }
+//   }
+
+//   let reversed = "";
+//   for (let i = hozircha.length - 1; i >= 0; i--) {
+//     reversed += hozircha[i];
+//   }
+
+//   let sanash = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+//     let unlimi = false;
+//     for (let j = 0; j < reversed.length; j++) {
+//       if (belgi === reversed[j]) {
+//         unlimi = true;
+//         break;
+//       }
+//     }
+//     if (unlimi) {
+//       natija += reversed[sanash];
+//       sanash ++
+//     } else {
+//       natija += belgi;
+//     }
+//   }
+//   return natija;
+// }
+
+// console.log(bbc("IceCreAm"));
+
+// --------------------------------------------------10 masala
+
+// kanvert yasash yulduzchalardan
+
+// function bbc(num) {
+//   let sum = "";
+//   for (let i = 0; i < num; i++) {
+//     for (let j = 0; j < num; j++) {
+//       if (i === 0 || j === 0 || i === num -1 || j === num -1 ) {
+        
+//         sum += " *"
+//       }else if (num / 2 >= i + 1 && (i === j || i + j === num - 1)) {
+//         sum += " *"
+//       } else {
+//         sum += "  "
+//       }
+//     }
+//     sum += "\n"
+//   }
+//   return sum
+// }
+
+// console.log(bbc(10));

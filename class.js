@@ -272,3 +272,51 @@
 // xabar.sendNotification("soat nechi bo'ldi")
 // // xabar.clearNotification()
 // console.log(xabar);
+
+// ---------------------------------------------------9 masala
+
+// stack clasi push, pop metodlari
+
+// class Stack {
+//   constructor() {
+//     this.items = []; // bu yerda biz elementlarni saqlaymiz
+//   }
+
+//   // 🔹 yangi element qo‘shish
+//   push(value) {
+//     this.items[this.items.length] = value;
+//     return this.items; // yangi massivni qaytaradi
+//   }
+
+//   // 🔹 oxirgi elementni o‘chirish
+//   pop() {
+//     if (this.items.length === 0) {
+//       return "Stack bo‘sh!";
+//     }
+//     const res = this.items[this.items.length - 1];
+//     this.items.length = this.items.length - 1;
+//     return res; // o‘chirilgan elementni qaytaradi
+//   }
+
+//   // 🔹 stack bo‘sh yoki yo‘qligini tekshirish
+//   isEmpty() {
+//     return this.items.length === 0;
+//   }
+
+//   // 🔹 stackdagi barcha elementlarni ko‘rish
+//   show() {
+//     return this.items;
+//   }
+// }
+
+// // 🔸 Stack obyektini yaratamiz
+// let s = new Stack();
+
+// console.log(s.push(10));  // [10]
+// console.log(s.push(20));  // [10, 20]
+// console.log(s.push(30));  // [10, 20, 30]
+
+// console.log("Pop qilindi:", s.pop()); // 30
+// console.log("Hozirgi holat:", s.show()); // [10, 20]
+
+// console.log("Bo‘shmi:", s.isEmpty()); // false

@@ -168,3 +168,80 @@
 // }
 
 // console.log(bbc([54, 23, 65, 12], 1));
+
+// ------------------------------------------------------10 masala
+
+// // split metodini qo'lda yasash
+
+// function bbc(str, belgi) {
+//   let sum = [];
+//   let soz = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === belgi) {
+//       sum.push(soz);
+//       soz = "";
+//     } else if (belgi === "") {
+//       sum.push(str[i]);
+//     } else {
+//       soz += str[i];
+//     }
+//   }
+//   let summa = [];
+//   if (belgi === "" && str.length === sum.length) {
+//     for (let i = 0; i < sum.length; i++) {
+//       summa.push(sum[i]);
+//     }
+//     if (summa.length === str.length) {
+//       return summa;
+//     }
+//   }
+//   sum.push(soz);
+//   return sum;
+// }
+
+// console.log(bbc("salom dunyo", " "));
+
+// -------------------------------------------------11 masala
+
+// Array ichidagi so'zlardan faqat "e" harfi ikki martadan ko'p uchraganini solish
+
+// function bbc(arr) {
+//   let sum = [];
+//   let obj = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//       if (arr[i][j] === "e") {
+//         obj[arr[i]] = (obj[arr[i]] || 0) + 1;
+//       }
+//     }
+//   }
+//   for (const key in obj) {
+//     if (obj[key] > 1) {
+//       sum.push(key);
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(["elephant", "apple", "tree", "cheese", "banana"]));
+
+// ---------------------------------------------------12 masala
+
+// ichma ich arrayni hisoblash kerak edi ishlolmadim va jptdan ko'chirdim
+
+// function bbc(arr) {
+//   let count = 0;
+
+//   function ichigaKirish(a) {
+//     if (Array.isArray(a)) {
+//       count++;
+//       ichigaKirish(a[0])
+//     }
+//   }
+
+//   ichigaKirish(arr);
+//   return count;
+// }
+
+// console.log(bbc([[[]]]));
+

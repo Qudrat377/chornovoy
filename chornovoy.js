@@ -1503,3 +1503,57 @@
 
 // console.log(kichik);
 
+// ------------------------------------------
+
+// function makeCounter() {
+//   let count = 0; // ichki o‘zgaruvchi (faqat makeCounter ichida mavjud)
+
+//   function increment() {
+//     count++;
+//     console.log("Hozirgi qiymat:", count);
+//   }
+
+//   return increment; // ichki funksiyani tashqariga qaytaramiz
+// }
+
+// const counter = makeCounter(); // endi counter() — ichki increment()ni bildiradi
+
+// counter(); // Hozirgi qiymat: 1
+// counter(); // Hozirgi qiymat: 2
+// counter(); // Hozirgi qiymat: 3
+
+// -------------------------------------------------------
+
+// function makeStorage() {
+//   let value = []; // ichki o‘zgaruvchi
+//   return {
+//     set(newValue) {
+//       value[value.length] = newValue;
+//       console.log("Yangi qiymat saqlandi:", value);
+  
+//     },
+//     get() {
+//       return value
+//     }
+//   };
+// }
+
+// const storage = makeStorage();
+
+// storage.set([25, 14]);      // Yangi qiymat saqlandi: 42
+// console.log(storage.get()); // 42
+
+// ------------------------------------------------
+
+// function outerFunction(a) {
+//     let x = a; // ichki o‘zgaruvchi
+    
+//     function innerFunction(b) {
+//         console.log("Natija:", x );
+//   }
+
+//   innerFunction(); // ichkaridagi funksiya chaqirildi
+// }
+// outerFunction(6); // Natija: 15
+
+

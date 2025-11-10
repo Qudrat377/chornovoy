@@ -137,3 +137,37 @@
 // }
 
 // console.log(bbc([2, 54, 4, 11, 1, 34, 11]));
+
+// -----------------------------------------6 masala
+
+// arraydagi takroriy elementni topish sonini sanash
+
+// function bbc(arr) {
+//   let obj = {};
+//   let natija = {
+//     element: 0,
+//     count: 0,
+//   };
+//   for (let i = 0; i < arr.length; i++) {
+//     obj[arr[i]] = (obj[arr[i]] || 0) + 1;
+//   }
+//   let katta = Object.entries(obj);
+//   let son = 0;
+//   for (let i = 0; i < katta.length; i++) {
+//     console.log(katta[i][1], son);
+
+//     if (son < katta[i][1]) {
+//       son = katta[i][1];
+//     }
+//   }
+//   for (const key in obj) {
+//     if (obj[key] === son) {
+//       natija.element = +key;
+//       natija.count = obj[key];
+//     }
+//   }
+
+//   return natija;
+// }
+
+// console.log(bbc([3, 7, 3, 2, 3, 7, 7, 8, 7]));
