@@ -1318,7 +1318,7 @@
 
 // console.log(bbc(10));
 
-// -----------------------------------------------------4 masala
+//  4 masala
 
 // arraydan ikkinchi argumentchalik kesib arrayni ortidan qo'shib qo'yish
 
@@ -1338,7 +1338,7 @@
 
 // console.log(bbc([1, 2, 3, 4, 5, 6, 7], 3));
 
-// -------------------------------------------------5 masala
+//  5 masala
 
 // objdagi number typedagilarni hisoblang
 
@@ -1365,7 +1365,7 @@
 
 // console.log(bbc(obj));
 
-// -----------------------------------------------------6 masala
+//  6 masala
 
 // // split metodini qo'lda yasash
 
@@ -1397,7 +1397,7 @@
 
 // console.log(bbc("salom dunyo", ""));
 
-// ----------------------------------------------------7 masala
+//  7 masala
 
 // son 4 ning darajasimi
 
@@ -1414,7 +1414,7 @@
 
 // console.log(bbc(64));
 
-// ----------------------------------------------------8 masala
+// 8 masala
 
 // arrydagi elementlarni teskari qilish
 
@@ -1428,7 +1428,7 @@
 
 // console.log(bbc(["s", "a", "l", "o", "m", " ", "d", "u", "n", "y", "o"]))
 
-// --------------------------------------------------9 masala
+//  9 masala
 
 // stingdagi unli harflarni teskari qilish
 
@@ -1472,7 +1472,7 @@
 
 // console.log(bbc("IceCreAm"));
 
-// --------------------------------------------------10 masala
+// 10 masala
 
 // kanvert yasash yulduzchalardan
 
@@ -1481,7 +1481,7 @@
 //   for (let i = 0; i < num; i++) {
 //     for (let j = 0; j < num; j++) {
 //       if (i === 0 || j === 0 || i === num -1 || j === num -1 ) {
-        
+
 //         sum += " *"
 //       }else if (num / 2 >= i + 1 && (i === j || i + j === num - 1)) {
 //         sum += " *"
@@ -1495,3 +1495,462 @@
 // }
 
 // console.log(bbc(10));
+
+// ----------------------------------------------9 dars
+
+// 1 masala
+
+// birinchi bilan oxirgisi teng bo'lsa true qaytarsin
+
+// function bbc(arr) {
+
+// let birinchisi = arr[0]
+// let oxirgisi = arr[arr.length -1]
+
+// return birinchisi === oxirgisi
+// }
+
+// console.log(bbc([1, 2, 3, 1]));
+
+// 2 masala
+
+// arrayni ichida 1 dan nechta ekanligini ingilischa sonni aytilishi bila ifodalang
+
+// function bbc(...arr) {
+//   let count = 0;
+//   let obj = {
+//     0: "zero",
+//     1: "one",
+//     2: "two",
+//     3: "three",
+//     4: "four",
+//     5: "five",
+//     6: "six",
+//     7: "seven",
+//     8: "eight",
+//     9: "nine",
+//   };
+
+//   let array = arr.flat(Infinity);
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === 1) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+
+//   for (const key in obj) {
+//     if (+key === count) {
+//       return obj[key];
+//     }
+//   }
+// }
+
+// console.log(bbc([1, 1, 3], [7, 1], [1, 3], [1]));
+
+// 3 masala
+
+// argumetdagi qiymatlar birxilligini tekshirish
+
+// function bbc(...qiymat) {
+//   let arr = qiymat;
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[0] === arr[i]) {
+//       sum.push(arr[i]);
+//     }
+//   }
+//   return sum.length === arr.length;
+// }
+
+// console.log(bbc(false, false, false, false));
+
+// 4 masala
+
+// kattasini topib hamma parametrlarini aniqlash
+
+// function bbc(...num) {
+//   let sum = num;
+//   let katta = sum[0];
+//   let obj = {
+//     0: "zero",
+//     1: "one",
+//     2: "two",
+//     3: "three",
+//     4: "four",
+//     5: "five",
+//     6: "six",
+//     7: "seven",
+//     8: "eight",
+//     9: "nine",
+//   };
+
+//   for (let i = 0; i < sum.length; i++) {
+//     if (katta < sum[i]) {
+//       katta = sum[i];
+//     }
+//   }
+//   let soz = katta.toString();
+//   let qiymatlar = [];
+//   let sonlar = [];
+//   for (let i = 0; i < soz.length; i++) {
+//     for (const key in obj) {
+//       if (soz[i] === key) {
+//         qiymatlar.push(obj[key]);
+//         sonlar.push(+key);
+//       }
+//     }
+//   }
+//   let array = [...sonlar, ...qiymatlar];
+//   let objekts = {
+//     max_namber: `${katta}`,
+//     arr: `${array}`,
+//     arr_length: `${array.length}`,
+//     type: `${typeof array[array.length - 1]}`,
+//   };
+//   return objekts;
+// }
+
+// console.log(bbc(19, 21));
+
+// 5 masala
+
+// qiymatlarni uniq qilish
+
+// function bbc(arr) {
+//   let sum = [];
+//   for (let i = 0; i <= arr.length; i++) {
+//     for (let j = i + 1; j <= arr.length; j++) {
+//       if (!sum.includes(arr[i])) {
+//         sum.push(arr[i]);
+//       }
+//     }
+//   }
+//   return sum;
+// }
+// console.log(bbc(["The", "big", "cat"]));
+// console.log(bbc(["John", "Taylor", "John"]));
+// console.log(bbc([1, 0, 1, 0, 5]));
+
+// 6 masala
+
+// arraydagi sonlarni qiymatini aniqlang
+
+// function bbc(arr) {
+//   let array = arr.flat();
+//   let obj = {
+//     0: "zero",
+//     1: "one",
+//     2: "two",
+//     3: "three",
+//     4: "four",
+//     5: "five",
+//     6: "six",
+//     7: "seven",
+//     8: "eight",
+//     9: "nine",
+//   };
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+//   if (sum <= 10) {
+//     for (const key in obj) {
+//       if (+key === sum) {
+//         return { sum: `${obj[key]}` };
+//       }
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(
+//   bbc([
+//     [0, 1, 0, 0],
+//     [1, 1, 0, 1],
+//     [0, 1, 0, 1],
+//     [0, 0, 1, 5],
+//   ])
+// );
+
+// 7 masala
+
+// uniq qilish va so'rtlash
+
+// function bbc(arr) {
+//   let sum = [];
+//   for (let i = 0; i <= arr.length; i++) {
+//     for (let j = i + 1; j <= arr.length; j++) {
+//       if (!sum.includes(arr[i])) {
+//         sum.push(arr[i]);
+//       }
+//     }
+//   }
+//   for (let i = 0; i < sum.length; i++) {
+//     for (let j = 0; j < sum.length; j++) {
+//       if (sum[j] > sum[j + 1]) {
+//         let temp = sum[j];
+//         sum[j] = sum[j + 1];
+//         sum[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]));
+// console.log(bbc([6, 7, 3, 2, 1]));
+// console.log(bbc([1, 2, 4, 3]));
+
+// // 8 masala
+
+// // so'zlarda s harfi borlarini alohida objektda key sifatida saqlash va velyusiga teskari qiylib saqlash shu so'zni
+
+// function bbc(str, harf) {
+//   let sum = [];
+//   let soz = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+//     if (belgi !== " ") {
+//       soz += belgi;
+//     } else {
+//       sum.push(soz);
+//       soz = "";
+//     }
+//   }
+//   sum.push(soz);
+//   let result = {};
+//   for (const dona of sum) {
+//     for (let i = 0; i < dona.length; i++) {
+//       let belgi = dona[i];
+//       if (belgi === harf) {
+//         result[dona] = i;
+//         break;
+//       }
+//     }
+//   }
+//   for (const key in result) {
+//     let sozlar = "";
+//     for (let i = key.length - 1; i >= 0; i--) {
+//       let belgi = key[i];
+//       sozlar += belgi;
+//     }
+//     result[key] = sozlar;
+//   }
+//   return result;
+// }
+
+// console.log(bbc("word searches are super fun", "s"));
+
+// 9 masala
+
+// kattaasini topish Math.Max siz
+
+// function bbc(arr) {
+//   let kattasi = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (kattasi < arr[i]) {
+//       kattasi = arr[i];
+//     }
+//   }
+//   return kattasi;
+// }
+
+// console.log(bbc([5, 5, 5, 8, 6, 7, 4, 7]));
+
+// 10 masala
+
+// arraydagi mavjud qiymatlarni sonini sanash
+
+// function bbc(arr) {
+//   let obj = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     obj[arr[i]] = (obj[arr[i]] || 0) + 1;
+//   }
+//   return obj;
+// }
+
+// console.log(bbc(["A", "B", "C", "B", true, true, false]));
+
+// 11 masala
+
+// arrayni boshida yoki oxirida 6 kelsa true qaytarish
+
+// function bbc(arr) {
+
+// let boshi = arr[0]
+// let oxiri = arr[arr.length - 1]
+// if (boshi === 6 || oxiri === 6) {
+//   return true
+// }
+// return false
+// }
+
+// console.log(bbc([6, 2, 6, 1]));
+
+// 12 masala
+
+// arrayni ikkiga bo'lib ikki yonidagi sonlar bilan o'rtadagisin so'zda yozish sonlarni
+
+// function bbc(arr, juftgaShart) {
+//   let obj = {
+//     0: "zero",
+//     1: "one",
+//     2: "two",
+//     3: "three",
+//     4: "four",
+//     5: "five",
+//     6: "six",
+//     7: "seven",
+//     8: "eight",
+//     9: "nine",
+//   };
+
+//   if (arr.length % 2 !== 0) {
+//     let sum = arr[Math.floor(arr.length / 2)];
+//     let chap = arr[arr.length - sum - 1];
+//     let ong = arr[arr.length - sum + 1];
+//     let result = [chap, sum, ong];
+//     let natija = [];
+//     for (const key in obj) {
+//       for (const donasi of result) {
+//         if (+key === donasi) {
+//           natija.push(obj[key]);
+//         }
+//       }
+//     }
+//     return natija;
+//   } else if (arr.length % 2 === 0 && juftgaShart === "<") {
+//         let sum = arr[Math.floor(arr.length / 2) - 1];
+//     let chap = arr[arr.length - sum];
+//     let ong = arr[arr.length - sum + 1];
+//     let result = [chap, sum, ong];
+//     let natija = [];
+//     for (const key in obj) {
+//       for (const donasi of result) {
+//         if (+key === donasi) {
+//           natija.push(obj[key]);
+//         }
+//       }
+//     }
+//     return natija;
+//   }else if (arr.length % 2 === 0 && juftgaShart === ">") {
+//         let sum = arr[Math.ceil(arr.length / 2)];
+//     let chap = arr[arr.length - sum];
+//     let ong = arr[arr.length - sum + 2];
+//     let result = [chap, sum, ong];
+//     let natija = [];
+//     for (const key in obj) {
+//       for (const donasi of result) {
+//         if (+key === donasi) {
+//           natija.push(obj[key]);
+//         }
+//       }
+//     }
+//     return natija;
+//   }
+// }
+
+// console.log(bbc([1, 2, 3, 4, 5], "<"));
+
+// 13 masala
+
+// stringdagi so'zlarni teskari joylashtiring
+
+// function bbc(str) {
+//   let sum = [];
+//   let soz = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+//     if (belgi !== " ") {
+//       soz += belgi;
+//     } else {
+//       sum.push(soz);
+//       soz = "";
+//     }
+//   }
+//   sum.push(soz);
+//   let result = "";
+//   for (let i = sum.length - 1; i >= 0; i--) {
+//     result += sum[i];
+//     if (i < sum.length) {
+//       result += " ";
+//     }
+//   }
+//   return result.toString();
+// }
+
+// console.log(bbc("the sky is blue"));
+
+// 14 masala
+
+// ikki marta kelgan harflar juftligi nechta ekanligini sanash stringda
+
+// function bbc(str) {
+//   let sanash = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (str[i] === str[j]) {
+//         sanash++;
+//         break;
+//       }
+//       break;
+//     }
+//   }
+//   return sanash;
+// }
+
+// console.log(bbc("aabbcde"));
+
+// ----jpt ishlab bergani
+
+// function bbc(str) {
+//   let sanash = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     let takror = false; // bu harf allaqachon sanalganmi?
+//     // avval sanalgan harfni o‘tkazib yuboramiz
+//     for (let k = 0; k < i; k++) {
+//       if (str[i] === str[k]) {
+//         takror = true;
+//         break;
+//       }
+//     }
+//     if (takror) continue; // agar bu harf oldin sanalgan bo‘lsa, davom etamiz
+
+//     // endi keyingi belgilarni tekshiramiz
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (str[i] === str[j]) {
+//         sanash++; // bu harf dublikat ekan
+//         break;    // shu harfni faqat bir marta sanaymiz
+//       }
+//     }
+//   }
+
+//   return sanash;
+// }
+
+// console.log(bbc("aabbcaade"));    // 👉 2
+// console.log(bbc("aabBcde"));    // 👉 1 (kichik-katta farqlanadi)
+// console.log(bbc("abcdee"));     // 👉 1
+// console.log(bbc("abcde"));      // 👉 0
+
+// 15 masala
+
+// stringdagi raqamlarni teskari qilish
+
+// function bbc(str) {
+//   let p = Math.abs(+str);
+//   let sum = "";
+//   console.log(p);
+//   str = p.toString();
+
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     if (str[i] >= "0" && str[i] <= "9") {
+//     }
+//     sum += str[i];
+//   }
+//   return sum;
+// }
+
+// console.log(bbc("-1215"));

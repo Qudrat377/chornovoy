@@ -672,3 +672,43 @@
 // console.log(bbc(24)); // false
 // console.log(bbc(8));  // false
 
+//----------------------------------------------------------23 masala
+
+// arraydagi sonlarni qiymatini aniqlang
+
+// function bbc(arr) {
+//   let array = arr.flat();
+//   let obj = {
+//     0: "zero",
+//     1: "one",
+//     2: "two",
+//     3: "three",
+//     4: "four",
+//     5: "five",
+//     6: "six",
+//     7: "seven",
+//     8: "eight",
+//     9: "nine",
+//   };
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+//   if (sum <= 10) {
+//     for (const key in obj) {
+//       if (+key === sum) {
+//         return { sum: `${obj[key]}` };
+//       }
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(
+//   bbc([
+//     [0, 1, 0, 0],
+//     [1, 1, 0, 1],
+//     [0, 1, 0, 1],
+//     [0, 0, 1, 5],
+//   ])
+// );

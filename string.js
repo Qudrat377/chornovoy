@@ -468,3 +468,79 @@
 // }
 
 // console.log(bbc("IceCreAm"));
+
+//------------------------------------------------------------16 masala
+
+// // so'zlarda s harfi borlarini alohida objektda key sifatida saqlash va velyusiga teskari qiylib saqlash shu so'zni
+
+// function bbc(str, harf) {
+//   let sum = [];
+//   let soz = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let belgi = str[i];
+//     if (belgi !== " ") {
+//       soz += belgi;
+//     } else {
+//       sum.push(soz);
+//       soz = "";
+//     }
+//   }
+//   sum.push(soz);
+//   let result = {};
+//   for (const dona of sum) {
+//     for (let i = 0; i < dona.length; i++) {
+//       let belgi = dona[i];
+//       if (belgi === harf) {
+//         result[dona] = i;
+//         break;
+//       }
+//     }
+//   }
+//   for (const key in result) {
+//     let sozlar = "";
+//     for (let i = key.length - 1; i >= 0; i--) {
+//       let belgi = key[i];
+//       sozlar += belgi;
+//     }
+//     result[key] = sozlar;
+//   }
+//   return result;
+// }
+
+// console.log(bbc("word searches are super fun", "s"));
+
+// --------------------------------------------------------17 masala
+
+// dublikat harflarni sanash va takror harflarni bir marta sanash
+
+// function bbc(str) {
+//   let sanash = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     let takror = false; // bu harf allaqachon sanalganmi?
+//     // avval sanalgan harfni o‘tkazib yuboramiz
+//     for (let k = 0; k < i; k++) {
+//       if (str[i] === str[k]) {
+//         takror = true;
+//         break;
+//       }
+//     }
+//     if (takror) continue; // agar bu harf oldin sanalgan bo‘lsa, davom etamiz
+
+//     // endi keyingi belgilarni tekshiramiz
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (str[i] === str[j]) {
+//         sanash++; // bu harf dublikat ekan
+//         break;    // shu harfni faqat bir marta sanaymiz
+//       }
+//     }
+//   }
+
+//   return sanash;
+// }
+
+// console.log(bbc("aabbcaade"));    // 👉 2
+// console.log(bbc("aabBcde"));    // 👉 1 (kichik-katta farqlanadi)
+// console.log(bbc("abcdee"));     // 👉 1
+// console.log(bbc("abcde"));      // 👉 0
+

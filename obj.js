@@ -171,3 +171,51 @@
 // }
 
 // console.log(bbc([3, 7, 3, 2, 3, 7, 7, 8, 7]));
+
+// ---------------------------------------------------------7 masala
+
+// kattasini topib hamma parametrlarini aniqlash
+
+// function bbc(...num) {
+//   let sum = num;
+//   let katta = sum[0];
+//   let obj = {
+//     0: "zero",
+//     1: "one",
+//     2: "two",
+//     3: "three",
+//     4: "four",
+//     5: "five",
+//     6: "six",
+//     7: "seven",
+//     8: "eight",
+//     9: "nine",
+//   };
+
+//   for (let i = 0; i < sum.length; i++) {
+//     if (katta < sum[i]) {
+//       katta = sum[i];
+//     }
+//   }
+//   let soz = katta.toString();
+//   let qiymatlar = [];
+//   let sonlar = [];
+//   for (let i = 0; i < soz.length; i++) {
+//     for (const key in obj) {
+//       if (soz[i] === key) {
+//         qiymatlar.push(obj[key]);
+//         sonlar.push(+key);
+//       }
+//     }
+//   }
+//   let array = [...sonlar, ...qiymatlar];
+//   let objekts = {
+//     max_namber: `${katta}`,
+//     arr: `${array}`,
+//     arr_length: `${array.length}`,
+//     type: `${typeof array[array.length - 1]}`,
+//   };
+//   return objekts;
+// }
+
+// console.log(bbc(19, 21));
