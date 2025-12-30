@@ -1954,3 +1954,183 @@
 // }
 
 // console.log(bbc("-1215"));
+
+// -------------------------------------------10 dars
+
+// 1 masala
+
+// bo'sh joylarni olib tashlab oxiridagi harfni boshi bilan oxiriga qo'shib qo'yish
+
+// function bbc(str) {
+//   let sum = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== " ") {
+//       sum += str[i];
+//     }
+//   }
+//   let harf = sum[sum.length - 1];
+//   harf += sum += harf;
+
+//   return harf.toLocaleUpperCase();
+// }
+
+// console.log(bbc("       cat    "));
+
+// 2 masala
+
+// ikki arrayni bir biriga qo'shing va yig'indini so'rtlang
+
+// function bbc(arr, arr2) {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr2.length; j++) {
+//       sum.push((arr[i] += arr2[j]));
+//       i++;
+//     }
+//   }
+//   let katta = arr > arr2 ? arr.length - arr2.length : arr2.length - arr.length;
+//   let pushUchun =
+//     arr.length > arr2.length
+//       ? arr[arr.length - katta]
+//       : arr2[arr2.length - katta];
+//   sum.push(pushUchun);
+
+//   for (let i = 0; i < sum.length; i++) {
+//     for (let j = 0; j < sum.length; j++) {
+//       if (sum[j] > sum[j + 1]) {
+//         let temp = sum[j];
+//         sum[j] = sum[j + 1];
+//         sum[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc([1, 2, 3, 4, 5], [6, 7, 8, 9]));
+
+// 3 masala
+
+// sonni uzunligini topish
+
+// function bbc(num) {
+//   return num.toString().length;
+// }
+
+// console.log(bbc(1000));
+
+// 4 masala
+
+// berilgan songacha sonlarni yig'indisini toping
+
+// function bbc(num) {
+//   let sum = 0;
+//   for (let i = 0; i <= num; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(600));
+
+// 5 masala
+
+// gugurt uylarni hisoblash
+
+// function bbc(num) {
+//   let sum = 0;
+//   if (num === 1) {
+//     return num * 6;
+//   } else if (num > 1) {
+//     sum = num * 6 - num + 1;
+//   }
+//   return sum;
+// }
+
+// console.log(bbc(4));
+
+// 6 masala
+
+// objni key velusini arrayga alohida array sifatida solish
+
+// function bbc(obj) {
+//   let sum = [];
+//   for (const key in obj) {
+//     sum.push([key, obj[key]]);
+//   }
+//   return sum;
+// }
+
+// console.log(bbc({ a: 1, b: 2 }));
+
+// 7 masala
+
+// argumetdagi barcha elementlarni bir arrayga solish
+
+// function bbc(...arr) {
+//   let sum = arr.flat(Infinity);
+//   return sum;
+// }
+
+// console.log(bbc([1, 2, 3], [4, 5], [6, 7]));
+
+// 8 masala
+
+// strdagi sonlarni tekislang
+
+// function bbc(str) {
+//   let sum = "";
+//   for (let i = 0; i < str.length; i++) {
+//     sum += str[i];
+//   }
+//   return +sum;
+// }
+
+// console.log(bbc("230.000"));
+// console.log(bbc("03.1400"));
+// console.log(bbc("00402"));
+
+// 9 masala
+
+// ikki arrayda ham mavjud elementlarni yig'ing
+
+// function bbc(arr, arr2) {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr2.length; j++) {
+//       if (arr[i] === arr2[j]) {
+//         sum.push(arr[i]);
+//       }
+//     }
+//   }
+//   return sum;
+// }
+
+// console.log(bbc([1, 3, 4, 6, 7, 9], [1, 2, 3, 4, 7, 10]));
+
+// 10 masala
+
+// function bbc(str) {
+//   let shrift = {
+//     b: "1",
+//     a: "0",
+//   };
+//   let sum = "";
+//   for (const key in shrift) {
+//     for (let i = 0; i < str.length; i++) {
+//       if (key === str[i]) {
+
+//         // console.log(str[i], key);
+        
+//         sum += shrift[key];
+//       console.log(shrift[key]);
+      
+//       } else {
+//         sum += str[i];
+//       }
+//     }
+//   }
+//   return sum
+// }
+
+// console.log(bbc("banana"));

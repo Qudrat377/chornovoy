@@ -219,3 +219,17 @@
 // }
 
 // console.log(bbc(19, 21));
+
+//---------------------------------------------------8 masala
+
+// objni key velusini arrayga alohida array sifatida solish
+
+// function bbc(obj) {
+//   let sum = [];
+//   for (const key in obj) {
+//     sum.push([key, obj[key]]);
+//   }
+//   return sum;
+// }
+
+// console.log(bbc({ a: 1, b: 2 }));

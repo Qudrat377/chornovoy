@@ -245,3 +245,55 @@
 
 // console.log(bbc([[[]]]));
 
+// -----------------------------------------13 masala
+
+
+// let summa = [
+//   {
+//     id: "1",
+//     nomi: "shakar",
+//   },
+//   {
+//     id: "2",
+//     nomi: "tuxum",
+//   },
+//   {
+//     id: "3",
+//     nomi: "go'sht",
+//   },
+// ];
+
+// let bbcJavobi = bbc(summa, 2);
+
+// function bbc(arr, ochir) {
+//   let sum = [];
+//   let kelgan = ochir.toString();
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let belgi = arr[i];
+
+//     if (belgi.id !== kelgan) {
+//       sum.push(belgi);
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbcJavobi);
+
+
+
+
+    function topish (nimanidan_qidiray, nimani) {
+
+          let sum = ""
+          for (let i = 0; i < nimanidan_qidiray.length; i++) {
+           let belgi = nimanidan_qidiray[i]
+           if (belgi === nimani) {
+            sum += belgi
+            break
+           }
+           return sum
+          }
+        }

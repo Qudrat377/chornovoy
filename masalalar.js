@@ -712,3 +712,42 @@
 //     [0, 0, 1, 5],
 //   ])
 // );
+
+// -------------------------------------------- 24 masala
+
+// sonlarni bir katta bir kichik qilib 
+
+// function bbc(arr) {
+//   // 1️⃣ Bubble sort bilan o'sish tartibida tartiblash
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = 0; j < arr.length - i - 1; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         let temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
+//       }
+//     }
+//   }
+
+//   // 2️⃣ Eng katta, eng kichik, navbat bilan yig'ish
+//   let sum = [];
+//   let left = 0;
+//   let right = arr.length - 1;
+
+//   while (left <= right) {
+//     if (right >= left) {
+//       sum.push(arr[right]); // eng kattasi
+//       console.log(arr[right], "arr[right]");
+//       right--;
+//     }
+//     if (left <= right) {
+//       sum.push(arr[left]); // eng kichigi
+//       console.log(arr[left], "arr[left]");
+//       left++;
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(bbc([3, 1, 4, 1, 5, 9, 2]));

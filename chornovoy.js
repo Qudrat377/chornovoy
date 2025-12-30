@@ -913,17 +913,16 @@
 
 // console.log(bbc([342, 53, 101, 36]));
 
-
 // --------------------------------------amaliyot 1 dan 9 gacha Dars
 
-// harf larni objda chiqarish kerak 
+// harf larni objda chiqarish kerak
 
 // let str = "Hello World"
 
 // let result = {}
-// let sum = "" 
+// let sum = ""
 // for (let i = 0; i < str.length; i++) {
-   
+
 // // console.log("index: ", i, "harif:", str [i]);
 // if (str[i] !== " ") {
 //     sum += str[i] += sum += i
@@ -934,13 +933,9 @@
 
 // console.log(result);
 
-
-
 // --------------------------------------amaliyot 1 dan 9 gacha Dars
 
 //-------------------------------------- objda chiqarish
-
-
 
 // let harf = "abcdefghijklmnopqrstuvwxyz"
 
@@ -949,20 +944,16 @@
 // for (let i = 0; i < harf.length; i++) {
 
 // obj[i + 1] = harf[i]
-  
+
 // }
 
 // console.log(obj);
 
-
-
 // --------------------------------------amaliyot еуые лфеефыш
-
-
 
 // function simulateNumberProcess(original) {
 //   console.log(`\n=== SIMULYATSIYA BOSHLANDI (${original}) ===`);
-  
+
 //   let number = original;
 //   let sum = 0;
 //   let multiplier = 10;
@@ -1040,11 +1031,7 @@
 // // 🧠 Sinov uchun:
 // simulateNumberProcess(324);
 
-
-
 // --------------------------------------amaliyotni davomi
-
-
 
 // function bbc(arr) {
 //   let result = [];
@@ -1136,7 +1123,6 @@
 // // 🧠 Sinov uchun:
 // bbc([342, 1111, 72, 24, 31, 17]);
 
-
 // ---------------------------------------------------------arrayga teskari solish
 
 // -------------------------------------------------js 2 oy 1 dars dw 5 masala
@@ -1165,7 +1151,6 @@
 //     } else if (sanash > 0) {
 //       x[l] = arrTog[arrTog.length - arrTog.length + sanash];
 
-      
 //     }
 //     sanash++;
 //   }
@@ -1185,7 +1170,7 @@
 //       sum += element[el];
 //     }
 //     suzma[suzma.length] = sum; // [ 's', 'os', 'sos', 'msos', 'amsos' ]
-    
+
 //   }
 
 //   let qiymat = []
@@ -1194,14 +1179,13 @@
 //       if (solishtirish1 === solishtirish2)
 //         qiymat[qiymat.length] = solishtirish2
 //     }
-    
+
 //   }
 
 //   return suzma;
 //   //    str[str.length - 1 - 1];
 // }
 // console.log(bbc("sosma"));
-
 
 // ----------------------------------------------------objdagi qiymatlarni qo'shish
 
@@ -1291,7 +1275,7 @@
 //       let takror = false;
 
 //       console.log(`   🔹 J = ${j}, harf = '${harf}'`);
-      
+
 //       // k sikl: harf stringda bor-yo'qligini tekshiradi
 //       for (let k = 0; k < string.length; k++) {
 //         console.log(`      🔸 K = ${k}, string[${k}]='${string[k]}'`);
@@ -1404,7 +1388,6 @@
 //   });
 // }
 
-
 // async function tayyorlanishParallel() {
 //   console.log("Ishlar parallel boshlandi...\n");
 
@@ -1448,7 +1431,6 @@
 
 // let kichik = sum[0][2]
 
-
 // for (let i = 0; i < sum.length; i++) {
 // if (kichik > 0 && sum[i][2] > 0) {
 //     if (kichik > sum[i][2]) {
@@ -1461,16 +1443,14 @@
 // for (const element of sum) {
 //     // console.log(element[2]);
 //     console.log(kichik.includes(element[2]));
-    
+
 //     // if (element[2].includes(kichik)) {
 //     //     result[result.length] = element[1]
 //     // }
-    
+
 // }
 
 // console.log(kichik);
-
-
 
 // let kichik = 11
 // let sum = [21, 43, 11, 45, 4, 32, 54]
@@ -1483,7 +1463,6 @@
 
 // console.log(kichik);
 
-
 // let sum = [
 //   [ [ 0, 2 ], [ 21, 11 ], -15 ],
 //   [ [ 0, 4 ], [ 21, 4 ], -12 ],
@@ -1493,12 +1472,11 @@
 
 // let kichik = sum[0][2]
 
-
 // for (let i = 0; i < sum.length; i++) {
 //     if (kichik < sum[i][2]) {
 //         kichik = sum[i][2]
 //     }
-    
+
 // }
 
 // console.log(kichik);
@@ -1530,7 +1508,7 @@
 //     set(newValue) {
 //       value[value.length] = newValue;
 //       console.log("Yangi qiymat saqlandi:", value);
-  
+
 //     },
 //     get() {
 //       return value
@@ -1547,7 +1525,7 @@
 
 // function outerFunction(a) {
 //     let x = a; // ichki o‘zgaruvchi
-    
+
 //     function innerFunction(b) {
 //         console.log("Natija:", x );
 //   }
@@ -1556,4 +1534,150 @@
 // }
 // outerFunction(6); // Natija: 15
 
+// -------------------------------------------------------funksinya topilgan id va kelgan idni solishtiradi
 
+// let foundedUserId = [
+//     {
+//         "id": "c8106a04-fed4-4b60-88ff-3d881951427e",
+//         "username": "Qudratbek",
+//         "email": "qudratrazzoqov377@gmail.com",
+//         "role": "admin",
+//         "password": "$2b$12$Ux7nhlsWNW519P/SAAZTJezVZivYEk4PNW.UYHQEezuiDujpj34c2",
+//         "todo_list": [
+//             {
+//                 "id": "1b766d8a-15d3-44d5-9454-752488b72fda",
+//                 "todo_item": "ishlar",
+//                 "time": "18:31"
+//             },
+//             {
+//                 "id": "ce6d86ae-656c-4545-bb9a-76ec0cf69796",
+//                 "todo_item": "ishlar",
+//                 "time": "18:31"
+//             }
+//         ]
+//     },
+//     {
+//         "id": "59216783-d3d4-49da-a226-b3e26e828c86",
+//         "username": "Qudrat",
+//         "email": "qudratrazzoqov677@gmail.com",
+//         "role": "admin",
+//         "password": "$2b$12$lMER9KwK2oAZZpjlqPbnTO79N3.TWXVhOQabjiykxRQF5q4/FNOVK",
+//         "todo_list": [
+//             {
+//                 "id": "0357211d-52f9-41f8-9ec6-c0a1c6daa0ba",
+//                 "todo_item": "nazorat",
+//                 "time": "18:26"
+//             },
+//             {
+//                 "id": "946c8705-27fd-494e-9c41-dc832509587a",
+//                 "todo_item": "sinov",
+//                 "time": "18:26"
+//             },
+//             {
+//                 "id": "84edbe4e-43fe-406f-ae57-ee6825426c17",
+//                 "todo_item": "ishlar",
+//                 "time": "18:29"
+//             }
+//         ]
+//     }
+// ]
+
+//     let foundedData = id_bilan_top(foundedUserId, "0357211d-52f9-41f8-9ec6-c0a1c6daa0ba");
+
+// function id_bilan_top(array, topilishi_kerak_id) {
+//   let sum = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     let belgi = array[i].todo_list;
+
+//     for (let j = 0; j < belgi.length; j++) {
+//       let obj = belgi[j];
+//       let todo = belgi[j].id;
+//       if (todo.toString() === topilishi_kerak_id.toString()) {
+//         sum.push(obj);
+//       }
+//     }
+//   }
+
+//   return sum;
+// }
+
+// console.log(foundedData);
+
+// ----------------------------------------------------------MongoDB bilan ishlash
+
+// let BooksArr = db.Books.find().toArray();
+
+// compartion(BooksArr, "Qudrat", "Kecha va kunduz", 7);
+
+// function compartion(have, username, bookname, count) {
+//   for (let i = 0; i < have.length; i++) {
+//     let belgi = have[i];
+//     if (belgi.bookname === bookname) {
+//       if (belgi.count >= count) {
+
+//         db.Orders.insertOne({
+//           username: username,
+//           bookname: bookname,
+//           date: "17.12.2025",
+//           count: count,
+//         });
+
+//         db.Books.updateOne(
+//           { bookname: { $lte: bookname } },
+//           { $set: { count: (belgi.count - count) } }
+//         );
+
+//         return console.log(belgi.count - count);
+//       } else {
+//         return console.log("Do'konda buncha kitob yo'q");
+//       }
+//     }
+//   }
+//   return console.log("Kitob nomi xato yoki do'konda bu kitob yo'q");
+// }
+
+// console.log(`${new Date().getDate()}.${new Date().getMonth()}.${new Date().getFullYear()}_${new Date().getHours()}:${new Date().getMinutes()}`
+// );
+
+// ---------------------------------------------------------books mongodb
+
+// function ObjectId() {}
+
+// function orderArray(arr) {
+//   let result = {};
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let { bookname, count } = arr[i];
+
+//     if (!result[bookname]) {
+//       result[bookname] = 0;
+//     }
+
+//     result[bookname] += count;
+//   }
+
+//   return result;
+// }
+
+// console.log(orderArray(OrderArr));
+
+// ---------------------------------------------------------books mongodb
+
+// function ObjectId() {}
+
+// function orderArray(arr, muallif) {
+//   let result = {};
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let { bookname, count, author } = arr[i];
+
+//     if (author === muallif) {
+//       result[bookname] = (result[bookname] || 0) + count;
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(orderArray(author, "Abdulla Qodiriy"));
